@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100);
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=KoHo:200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Francois+One|Play');
+
+
+body {
+    font-family: "Avenir Next"; 
+    font-weight: 100;
+    /* color: #ffffff; */
+     
+}
+
+div.main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+
+div.title {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    top: 15em;
+    
+    text-align: center;
+}
+
+h1.main-name {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 100;
+    font-size: 4em;
+    line-height: 0;
+}
+
+h2.main-sub {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 100;
+    font-size: 1.5em;
+    display: inline-block;
+    margin-left: 1em;
+    margin-right: 1em;
+    line-height: 0;
+
+}
+
+div.icons {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    bottom:1em;
+}
+
+i.icon {
+    font-size: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+
+    transition:transform .3s ease-out;
+}
+
+i.icon:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+

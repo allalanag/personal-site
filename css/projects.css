@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Francois+One|Play');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100');
+
+div.projects {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.xop-container {
+    display: flex;
+}
+div {
+	flex-direction: column;
+    justify-content: center;
+}
+
+ 
+.xop-left {
+	background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(255, 255, 225, 0.10)), url(https://cdnb.artstation.com/p/assets/images/images/006/781/757/large/sanjaya-senarathane-img-20170728-003051.jpg?1501192885);
+	background-size: cover;
+	background-position: center;
+	flex: 1;
+	padding: 1rem;
+	transition: all .2s ease-in-out;
+  /* text-transform: uppercase; */
+  filter: grayscale(80%);
+  height: 50em;
+  text-align: center;
+
+}
+ 
+.xop-right {
+	background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(164, 222, 102, 0.10)), url(http://i.imgur.com/EHjNb0j.jpg);
+	background-size: cover;
+	background-position: center;
+	flex: 1;
+	padding: 1rem;
+	transition: all .2s ease-in-out;
+  /* text-transform: uppercase; */
+  filter: hue-rotate(90deg);
+  height: 50em;
+  text-align: center;
+
+}
+.xop-left:hover, .xop-right:hover {
+	transform: scale(0.95);
+  filter: hue-rotate(-90deg);
+}
+.xop-container h1 {
+	letter-spacing: 2px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 3rem;
+    color: #fff;
+
+}
+.xop-button {
+	border-radius: 2px;
+	color: #fff;
+	background-color: #333;
+	padding: 10px 6px;
+	margin: 0 1%;
+	text-align: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+	text-decoration: none;
+    letter-spacing: 1px;
+	display: inline-block;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: all 0.5s;
+	width: 150px;
+}
+ 
+.xop-button:hover {
+	background: #fff;
+	color: #333;
+}
+
+@media only screen and (max-width: 600px) {
+  .xop-container {
+    flex-direction: column;
+  }
+
+}
+
+
+
