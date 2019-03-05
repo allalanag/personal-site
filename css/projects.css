@@ -46,13 +46,25 @@ div {
 	transform: scale(0.95);
   filter: hue-rotate(-90deg);
 }
+
 .xop-container h1 {
 	letter-spacing: 2px;
     font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 3rem;
     color: #fff;
+    line-height: 1em;
 
 }
+.xop-container p {
+    /* font-family: 'Alegreya Sans SC', sans-serif; */
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 3em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
 .xop-button {
 	border-radius: 2px;
 	color: #fff;
@@ -67,7 +79,8 @@ div {
 	font-size: 1rem;
 	cursor: pointer;
 	transition: all 0.5s;
-	width: 150px;
+    width: 150px;
+    
 }
  
 .xop-button:hover {
