@@ -26,21 +26,19 @@ div {
 	transition: all .2s ease-in-out;
   /* text-transform: uppercase; */
   filter: grayscale(80%);
-  height: 50em;
+  height: 40em;
   text-align: center;
 
 }
  
 .xop-right {
-	background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(164, 222, 102, 0.10)), url(http://i.imgur.com/EHjNb0j.jpg);
-	background-size: cover;
-	background-position: center;
+	
 	flex: 1;
 	padding: 1rem;
 	transition: all .2s ease-in-out;
   /* text-transform: uppercase; */
   filter: hue-rotate(90deg);
-  height: 50em;
+  height: 40em;
   text-align: center;
 
 }
