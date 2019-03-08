@@ -8,6 +8,10 @@
 @import url('https://fonts.googleapis.com/css?family=KoHo:200,300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Francois+One|Play');
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: "Avenir Next"; 
@@ -23,6 +27,7 @@ div.main {
     
 }
 
+ 
 
 div.title {
     position: absolute;
