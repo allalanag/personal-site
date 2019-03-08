@@ -32,14 +32,13 @@ header{
     }
 
 body {
-    font-family: "Avenir Next"; 
+    font-family: 'Lato', sans-serif;
     font-weight: 100;
     /* color: #ffffff; */
 }
 
 h1.resume-header {
     font-size: 2.5em; 
-    font-family: 'Lato', sans-serif;
     letter-spacing: 3.5px;
     text-transform: uppercase;
     font-weight: 300;
@@ -47,8 +46,8 @@ h1.resume-header {
 
 }
 
+
 p.resume-header {
-    font-family: 'Lato', sans-serif;
     letter-spacing: 2.5px;
     text-transform: uppercase;
     font-weight: 100;
@@ -66,7 +65,63 @@ i.icon {
 }
 
 div.current{
+    background: #EEEEEE;
     text-align: center;
-    font-size: 10px;
+    /* font-size: 1.25em; */
+    padding-top: 1.25%;
+    padding-bottom: 2.5%;
+}
 
+div.current-role {
+	transition: all .2s ease-in-out;
+}
+div.current-role:hover {
+	transform: scale(1.04);
+}
+
+div.current h1 {
+    font-size: 1em; 
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-bottom: 1.5%;
+}
+
+div.resume-section {
+    padding: 4% 15% 4% 15%;
+}
+
+h1.resume-section-title {
+    font-size: 1.75em; 
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 0 0 1% 0;
+}
+
+div.resume-subsection {
+    padding: 4% 0 0 4%;
+}
+
+div.resume-subsection-titlesection {
+    border-left: 1px groove black;
+    padding: 1% 1% 1% 4%;
+}
+
+h2.resume-subsection-title {
+    font-size: 1em; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+
+}
+
+p.resume-subsection-title {
+    font-size: 1em; 
+    font-weight: 100;
+    letter-spacing: 0.5px;
+}
+
+p.resume-subsection-description {
+    padding: 1% 1% 1% 4%;
 }
