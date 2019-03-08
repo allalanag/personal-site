@@ -27,7 +27,6 @@ header{
     /* Create two equal columns that sits next to each other */
     .column {
     flex: 50%;
-    /* padding: %; */
     /* margin: 2% */
     }
 
@@ -60,7 +59,7 @@ p.resume-header-detail{
 }
 
 i.icon {
-    padding-right:8px;
+    padding: 0 10px 0 0;
 
 }
 
@@ -68,8 +67,11 @@ div.current{
     background: #EEEEEE;
     text-align: center;
     /* font-size: 1.25em; */
-    padding-top: 1.25%;
+    padding-top: 1.75%;
     padding-bottom: 2.5%;
+
+    border-top: 1px solid black;
+
 }
 
 div.current-role {
@@ -88,7 +90,7 @@ div.current h1 {
 }
 
 div.resume-section {
-    padding: 4% 15% 4% 15%;
+    padding: 4% 0% 4% 0%;
 }
 
 h1.resume-section-title {
