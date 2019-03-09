@@ -8,10 +8,24 @@
 @import url('https://fonts.googleapis.com/css?family=KoHo:200,300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Francois+One|Play');
 
+
 * {
     margin: 0;
     padding: 0;
-}
+    box-sizing: border-box;
+    }
+
+    .row {
+    display: flex;
+    }
+
+    /* Create two equal columns that sits next to each other */
+    .column {
+    flex: 50%;
+    /* margin: 2% */
+    }
+
+
 
 body {
     font-family: 'Lato', sans-serif;
@@ -24,9 +38,9 @@ div.main {
     position: relative;
     width: 100vw;
     height: 100vh;
-    
+    background: url(https://images.unsplash.com/photo-1551334787-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80);
+    color: #eeeeee;
 }
-
  
 
 div.title {
@@ -42,7 +56,7 @@ div.title {
 h1.main-name {
     font-family: 'Alegreya Sans SC', sans-serif;
     font-weight: 100;
-    font-size: 4em;
+    font-size: 4.5em;
     line-height: 0;
 }
 
@@ -66,7 +80,7 @@ div.icons {
 }
 
 i.icon {
-    font-size: 2em;
+    font-size: 3em;
     margin-left: 1em;
     margin-right: 1em;
 
@@ -75,6 +89,12 @@ i.icon {
 
 i.icon:hover {
     transform: scale(1.1);
+}
+
+div.about {
+    background: rgb(40, 40, 40);
+    color: #eeeeee;
+    height: 100em;
 }
 
 

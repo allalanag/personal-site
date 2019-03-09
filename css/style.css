@@ -23,7 +23,7 @@
   display: inline-block;
   flex: 0 1 24%;
   height: 100%;
-  margin: 0;
+  margin: 2% 0 2% 0;
   text-align: center;
   position: relative;
   font-size: 16px;
@@ -33,7 +33,7 @@
   background: #49E;
   position: absolute;
   font-size: 1.5em;
-  color: #fff;
+  color: rgb(40, 40, 40);
   padding-top: 18px;
   bottom: 0;
   height: 0;
@@ -46,7 +46,7 @@
   content: '%';
   font-size: 22px !important;
   vertical-align: top;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(40, 40, 40);
   margin-right: -8px;
 }
 .chartBars .bars li b {
@@ -116,7 +116,7 @@
 .chartBars3 .bars li .bar {
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
-  font-size: 22px !important;
+  font-size: 1em !important;
 }
 .chartBars3 .bars li .bar:after {
   font-size: 0.6em !important;
@@ -130,12 +130,12 @@
   width: 100%;
   position: absolute;
   bottom: initial;
-  top: 1em;
+  top: 0;
   left: -102%;
   text-align: right;
 }
 .chartBarsWrap.chartBarsHorizontal .chartBars {
-  height: 200px;
+  height: 300px;
 }
 .chartBarsWrap.chartBarsHorizontal .chartBars .bars {
   border: 0;
@@ -145,7 +145,7 @@
   padding-top: 10px;
   height: 100% !important;
   text-align: right;
-  font-size: 1.5em;
+  font-size: 1em;
   transition: 2s width cubic-bezier(0.6, 0.4, 0.4, 1.1);
 }
 .chartBarsWrap.chartBarsHorizontal .chartBars .bars .bar:after {
@@ -179,6 +179,9 @@
 }
 .bars li .bar.purpleBarFlat {
   background-color: #6e46af;
+}
+.bars li .bar.whiteBarFlat {
+  background-color: #eeeeee;
 }
 .box-piesite {
   text-align: center;
