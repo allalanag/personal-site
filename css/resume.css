@@ -36,6 +36,16 @@ body {
     /* color: #ffffff; */
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    transition: all .2s ease-in-out;
+}
+
+a:hover {
+    color: #EEEEEE;
+}
+
 h1.resume-header {
     font-size: 2.5em; 
     letter-spacing: 3.5px;
@@ -60,7 +70,6 @@ p.resume-header-detail{
 
 i.icon {
     padding: 0 10px 0 0;
-
 }
 
 div.current{
@@ -126,4 +135,33 @@ p.resume-subsection-title {
 
 p.resume-subsection-description {
     padding: 1% 1% 1% 4%;
+}
+
+div.language {
+    padding: 3% 0 0 3.5%;
+}
+
+
+label.language {
+        -webkit-box-align: center;
+        align-items: center;
+    background: #EEEEEE;
+    border-radius: .2em;
+    color: black;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    -ms-flex-align: center;
+    margin: 0.5% !important;
+    max-width: 100%;
+    padding: 1% 2% 1% 2%;
+    font-size: 0.9em;
+    font-weight: 100;
+    text-decoration: none;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+        user-select: none;
 }
