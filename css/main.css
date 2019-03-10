@@ -9,6 +9,13 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Francois+One|Play');
 
 
+@media (min-width: 1000px) {
+    #removeWeb{
+        display:none;
+    }   
+}
+
+
 
 * {
     margin: 0;
@@ -142,8 +149,9 @@ i.icon:hover {
 }
 
 div.about{
-
+    padding:0 20vw 6vw 20vw;
 }
+
 
 h1.about-title {
     font-family: 'Lato', sans-serif;

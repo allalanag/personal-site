@@ -1,7 +1,7 @@
 @media (max-width: 1000px) {
 
 
-    #remove{
+    #removeMobile{
         display:none;
     }   
 
@@ -71,17 +71,48 @@ h2.header {
     line-height: 0;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
 
+label.resume-link-mobile {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+        -webkit-box-align: center;
+        align-items: center;
+    border: 0.5px groove rgb(40, 40, 40);
+    border-radius: .2rem;
+    color: rgb(40, 40, 40);
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    -ms-flex-align: center;
+    margin: 0.5% !important;
+    max-width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: none;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+        user-select: none;
 
+}
+
+label.resume-link-mobile:hover {
+    background-color: rgb(40, 40, 40);
 }
 
 
 div.main {
     position: relative;
     width: 100vw;
-    height: 100vh;
-    background: url(https://images.unsplash.com/photo-1551334787-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80);
+    height: auto;
+    background: rgb(40, 40, 40);
     color: #eeeeee;
+    padding: 2rem 0 4rem 0;
 }
  
 
@@ -90,22 +121,21 @@ div.title {
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0 auto;*/
-    padding: 15rem 0 0 0; 
-    
+    padding: 0 0 0 0; 
     text-align: center;
 }
 
 h1.main-name {
     font-family: 'Alegreya Sans SC', sans-serif;
     font-weight: 100;
-    font-size: 3.5rem;
+    font-size: 3rem;
     line-height: 0;
 }
 
 h2.main-sub {
     font-family: 'Alegreya Sans SC', sans-serif;
     font-weight: 100;
-    font-size: 1.25rem;
+    font-size: 0.75rem;
     display: inline-block;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -119,7 +149,7 @@ div.icons {
     transform: translate(-50%, -50%);
     margin: 0 auto; */
     position: relative;
-    padding: 3rem 0 0 0; 
+    padding: 1rem 0 0 0; 
 
     text-align: center;
 
@@ -134,25 +164,28 @@ i.icon {
 }
 
 i.icon:hover {
-    transform: scale(1.1);
+    transform: none;
+    color: rgb(40, 40, 40);
 }
 
 div.about{
-
+    
+    padding:0 1rem 0 1rem;
 }
+
 
 h1.about-title {
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     border-left: 1px groove rgb(40, 40, 40);
-    padding: 2rem 2rem 2rem 2rem;
-    font-size: 3rem;
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: 2rem;
     letter-spacing: 2px;
     font-weight: 300;
 }
 
 p.about-description {
-    padding: 1rem 0rem 0rem 2rem;
+    padding: 1rem 0rem 0rem 1rem;
 }
 
 div.about-profile {

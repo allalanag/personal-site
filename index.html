@@ -13,6 +13,8 @@
 
 
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/mainMobile.css" />
+
     <link rel="stylesheet" type="text/css" media="screen" href="./css/graph.css" />
     
     <!-- Graphs -->
@@ -26,26 +28,29 @@
 </head>
 <body>
 
-    <div id="header">
-        <div id="header-content">
-            <h2 class="header"><a href="./resume.html" style="text-decoration: none; color: #eeeeee;">resume</a></h2>   
-            <h2 class="header"><a href="./resume.html" style="text-decoration: none; color: #eeeeee;;">about me</a></h2>            
-            <h2 class="header"><a href="./resume.html" style="text-decoration: none; color: #eeeeee;;">skill set</a></h2>            
-            <h2 class="header"><a href="./resume.html" style="text-decoration: none; color: #eeeeee;;">projects</a></h2> 
-            <h2 class="header"><a href="./resume.html" style="text-decoration: none; color: #eeeeee;;">contact me</a></h2>                     
-                    
+    <div id="removeMobile">
+        <div id="header" >
+            <div id="header-content">
+                <h2 class="header"><a href="./resume.html" style="text-decoration: none; color: #eeeeee;">resume</a></h2>   
+                <h2 class="header"><a href="./resume.html" style="text-decoration: none; color: #eeeeee;;">about me</a></h2>            
+                <h2 class="header"><a href="./resume.html" style="text-decoration: none; color: #eeeeee;;">skill set</a></h2>            
+                <h2 class="header"><a href="./resume.html" style="text-decoration: none; color: #eeeeee;;">projects</a></h2> 
+                <h2 class="header"><a href="./resume.html" style="text-decoration: none; color: #eeeeee;;">contact me</a></h2>                     
+                        
+            </div>
         </div>
     </div>
+
 
     <div class="container">
 
         <div class="main">
             <div class="title">
                 <h1 class="main-name">Maanav Garg</h1>
-                <h2 class="main-sub">Student</h2>
-                <h2 class="main-sub">Developer</h2>
-                <h2 class="main-sub">Engineer</h2>
-                <h2 class="main-sub">Designer</h2>
+                <h2 class="main-sub" id="removeMobile">Student</h2>
+                <h2 class="main-sub" id="removeMobile">Developer</h2>
+                <h2 class="main-sub" id="removeMobile">Engineer</h2>
+                <h2 class="main-sub" id="removeMobile">Designer</h2>
             </div>
             <div class="icons">
                     <i class="icon fab fa-linkedin-in"></i>
@@ -54,12 +59,16 @@
             </div>
         </div>
 
+        <div id="removeWeb" style="margin: 1rem 1rem 3rem 1rem; text-align: center">
+            <a href="./resume.html" style="text-decoration: none; color: rgb(40,40,40);"><label class="resume-link-mobile">resume</label></a>
+        </div>
+
         <!-- <hr style="border: 1px solid black; width: 80%; margin-top: 1em; margin-bottom: 1em;" /> -->
       
 
-        <div class="about" style="padding:0 20vw 0 0;">
-            <div style="padding: 1.5vw;"></div>
-                <div style="text-align: left; padding: 0 0 6vw 20vw">
+        <div class="about">
+            <div style="padding: 1.5vw;" id="removeMobile"></div>
+                <div>
                     <h1 class="about-title">About</h1>
                     <p class="about-description">A software engineering student and research assistant at McMaster University - currently finishing a 16-month internship at IBM a Software Developer and Technical Analyst. </p>
                     <p class="about-description">I look to work with any new tech I can get my hand on, often implementing them in side projects to enhance my understanding.</p>
