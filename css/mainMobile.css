@@ -1,13 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100');
-@import url('https://fonts.googleapis.com/css?family=Poiret+One');
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100);
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,400,700');
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900');
-@import url('https://fonts.googleapis.com/css?family=KoHo:200,300,400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Francois+One|Play');
+@media (max-width: 1000px) {
 
+
+    #remove{
+        display:none;
+    }   
 
 
 * {
@@ -204,3 +200,4 @@ p.background-description {
 
 
 
+}
