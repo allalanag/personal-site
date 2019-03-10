@@ -9,6 +9,13 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Francois+One|Play');
 
 
+
+
+  /* You'll need prefixes. @-ms-viewport, @-o-viewport, etc... */
+@viewport {
+    width: device-width;
+    }
+
 * {
     margin: 0;
     padding: 0;
@@ -39,6 +46,46 @@ p {
     line-height: 30px;
 }
 
+
+#header {
+    background-color: black;
+    /*Opacity start*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.70;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    /*Opacity end*/
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    z-index: 99999;
+}
+#header #header-content {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+h2.header {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 0.75rem;
+    display: inline-block;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    line-height: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+
+}
+
+
 div.main {
     position: relative;
     width: 100vw;
@@ -49,11 +96,11 @@ div.main {
  
 
 div.title {
-    position: absolute;
+    /* position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 0 auto;
-    top: 15em;
+    margin: 0 auto;*/
+    padding: 15rem 0 0 0; 
     
     text-align: center;
 }
@@ -61,33 +108,37 @@ div.title {
 h1.main-name {
     font-family: 'Alegreya Sans SC', sans-serif;
     font-weight: 100;
-    font-size: 4.5em;
+    font-size: 3.5rem;
     line-height: 0;
 }
 
 h2.main-sub {
     font-family: 'Alegreya Sans SC', sans-serif;
     font-weight: 100;
-    font-size: 1.5em;
+    font-size: 1.25rem;
     display: inline-block;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 1rem;
+    margin-right: 1rem;
     line-height: 0;
 
 }
 
 div.icons {
-    position: absolute;
+    /* position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 0 auto;
-    bottom:4em;
+    margin: 0 auto; */
+    position: relative;
+    padding: 3rem 0 0 0; 
+
+    text-align: center;
+
 }
 
 i.icon {
-    font-size: 2.5em;
-    margin-left: 1em;
-    margin-right: 1em;
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 
     transition:transform .3s ease-out;
 }
@@ -103,20 +154,20 @@ div.about{
 h1.about-title {
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-    border-right: 1px groove rgb(40, 40, 40);
-    padding: 2% 4% 2% 2%;
-    font-size: 3em;
+    border-left: 1px groove rgb(40, 40, 40);
+    padding: 2rem 2rem 2rem 2rem;
+    font-size: 3rem;
     letter-spacing: 2px;
     font-weight: 300;
 }
 
 p.about-description {
-    padding: 2% 1% 2% 4%;
+    padding: 1rem 0rem 0rem 2rem;
 }
 
 div.about-profile {
     text-align: left;
-    padding: 2% 0% 2% 0%;
+    padding: 2rem 0rem 2rem 0rem;
 
 }
 
@@ -134,8 +185,8 @@ p.background-title {
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     border-right: 2px groove #eeeeee;
-    padding: 2% 4% 4% 2%;
-    font-size: 3em;
+    padding: 2rem 2rem 2rem 2rem;
+    font-size: 3rem;
     letter-spacing: 2px;
     font-weight: 300;
 
@@ -145,15 +196,14 @@ h1.background-subtitle {
     font-family: 'Lato', sans-serif;
     font-weight: 100;
     text-transform: uppercase;
-    font-size: 2em;
-    padding: 1% 0 1% 0;
+    font-size: 200%;
+    /* padding: 1rem 0 1rem 0; */
 }
 
 p.background-description {
     font-family: 'Lato', sans-serif;
     font-weight: 100;
-    font-size: 1em;
-    padding: 1% 0 1% 0;
+    /* padding: 1rem 0 1rem 0; */
 }
 
 
