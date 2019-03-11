@@ -179,7 +179,7 @@ label.language {
         -webkit-box-align: center;
         align-items: center;
     border: 0.5px groove rgb(40, 40, 40);
-    overflow:hidden;
+    overflow: auto;
     border-radius: .2rem;
     color: rgb(40, 40, 40);
     display: -ms-inline-flexbox;
