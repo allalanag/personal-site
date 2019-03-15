@@ -91,7 +91,11 @@ div.main {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: url(https://images.unsplash.com/photo-1551334787-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80);
+    background: url(https://images.unsplash.com/photo-1551334787-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color: #eeeeee;
 }
  
@@ -181,12 +185,14 @@ div.background {
     background: rgb(40, 40, 40);
     color: #eeeeee;
     height: auto;
+    padding:0 20vw 6vw 20vw;
+
 }
 
-p.background-title {
+h1.background-title {
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-    border-right: 2px groove #eeeeee;
+    border-left: 2px groove #eeeeee;
     padding: 2rem 2rem 2rem 2rem;
     font-size: 3rem;
     letter-spacing: 2px;
