@@ -21,6 +21,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+
     }
 
     .row {
@@ -37,7 +47,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 30px;
     /* color: #ffffff; */
      
@@ -74,7 +84,7 @@ p {
 
 h2.header {
     font-family: 'Lato', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 0.75rem;
     display: inline-block;
     margin-left: 2rem;
@@ -112,19 +122,20 @@ div.title {
 
 h1.main-name {
     font-family: 'Alegreya Sans SC', sans-serif;
-    font-weight: 100;
-    font-size: 3.5rem;
+    font-weight: 800;
+    font-size: 4rem;
     line-height: 0;
 }
 
 h2.main-sub {
     font-family: 'Alegreya Sans SC', sans-serif;
-    font-weight: 100;
+    font-weight: 800;
     font-size: 1.25rem;
     display: inline-block;
     margin-left: 1rem;
     margin-right: 1rem;
     line-height: 0;
+
 
 }
 
@@ -202,7 +213,7 @@ h1.background-title {
 
 h1.background-subtitle {
     font-family: 'Lato', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     text-transform: uppercase;
     font-size: 200%;
     /* padding: 1rem 0 1rem 0; */
@@ -210,7 +221,7 @@ h1.background-subtitle {
 
 p.background-description {
     font-family: 'Lato', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     /* padding: 1rem 0 1rem 0; */
 }
 

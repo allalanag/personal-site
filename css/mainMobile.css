@@ -10,6 +10,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    
     }
 
     .row {
@@ -26,7 +35,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 30px;
     /* color: #ffffff; */
      
