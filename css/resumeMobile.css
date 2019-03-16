@@ -45,7 +45,7 @@
     
     body {
         font-family: 'Lato', sans-serif;
-        font-weight: 100;
+        font-weight: 300;
         color: rgb(40, 40, 40);
         width: 100vw;
         height: auto;
@@ -98,7 +98,7 @@
         text-align: center;
         letter-spacing: 2.5px;
         text-transform: uppercase;
-        font-weight: 100;
+        font-weight: 300;
         padding: 0 0 2.5rem 0;
 
     }
@@ -171,7 +171,7 @@
     
     p.resume-subsection-title {
         font-size: 0.75rem; 
-        font-weight: 100;
+        font-weight: 300;
         letter-spacing: 0.5px;
     }
     

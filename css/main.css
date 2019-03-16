@@ -115,12 +115,21 @@ div.title {
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0 auto;*/
-    padding: 15rem 0 0 0; 
+    padding: 12rem 0 0 0; 
     text-align: center;
 }
 
 img.image-logo {
-    height: 10rem;
+    height: 18rem;
+    transition:transform .3s ease-in-out;
+    padding: 1rem;
+
+}
+
+img.image-logo:hover {
+    transform: scale(1.05);
+
+
 }
 
 h1.main-name {
