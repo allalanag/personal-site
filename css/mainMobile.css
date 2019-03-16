@@ -134,6 +134,11 @@ div.title {
     text-align: center;
 }
 
+img.image-logo {
+    height: 10rem;
+}
+
+
 h1.main-name {
     font-family: 'Alegreya Sans SC', sans-serif;
     font-weight: 100;

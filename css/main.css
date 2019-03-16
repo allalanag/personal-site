@@ -116,27 +116,28 @@ div.title {
     transform: translate(-50%, -50%);
     margin: 0 auto;*/
     padding: 15rem 0 0 0; 
-    
     text-align: center;
 }
 
+img.image-logo {
+    height: 10rem;
+}
+
 h1.main-name {
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-weight: 800;
+    font-weight: 300;
     font-size: 4rem;
     line-height: 0;
+    text-transform: uppercase;
 }
 
 h2.main-sub {
     font-family: 'Alegreya Sans SC', sans-serif;
-    font-weight: 800;
+    font-weight: 100;
     font-size: 1.25rem;
     display: inline-block;
     margin-left: 1rem;
     margin-right: 1rem;
     line-height: 0;
-
-
 }
 
 div.icons {
@@ -152,7 +153,7 @@ div.icons {
 }
 
 i.icon {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-left: 2rem;
     margin-right: 2rem;
 
