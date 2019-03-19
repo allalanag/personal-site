@@ -86,66 +86,6 @@
                     <p class="about-description">I also love drawing and designing, learning how to cook beautiful food, reading classic novels, trying different teas, playing board games and going to the gym.</p>
                 </div>
 
-
-<!-- 
-                <canvas id="myChartProgramming" width="400" height="400"></canvas>
-                <script>
-                    var ctx = document.getElementById('myChartProgramming').getContext('2d');
-                    var myChart = new Chart(ctx, {
-                        type: 'bar',
-                        data: {
-                            labels: ['HTML', 'CSS', 'JavaScript', 'C', 'Java', 'Python', 'Elm'],
-                            datasets: [{
-                                label: false,
-                                data: [90, 80, 70, 60, 20, 30, 50],
-                                backgroundColor: [
-                                    'rgba(255, 99, 132, 0.2)',
-                                    'rgba(54, 162, 235, 0.2)',
-                                    'rgba(255, 206, 86, 0.2)',
-                                    'rgba(75, 192, 192, 0.2)',
-                                    'rgba(153, 102, 255, 0.2)',
-                                    'rgba(255, 159, 64, 0.2)',
-                                    'rgba(255, 99, 132, 0.2)'
-
-                                ],
-                                borderColor: [
-                                    'rgba(255, 99, 132, 1)',
-                                    'rgba(54, 162, 235, 1)',
-                                    'rgba(255, 206, 86, 1)',
-                                    'rgba(75, 192, 192, 1)',
-                                    'rgba(153, 102, 255, 1)',
-                                    'rgba(255, 159, 64, 1)',
-                                    'rgba(255, 99, 132, 1)',
-
-                                ],
-                                borderWidth: 1
-
-                            }]
-                        },
-                        options: {
-                            legend: { 
-                                display: false 
-                            },
-                            scales: {
-                                yAxes: [
-                                    {
-                                    ticks: {
-                                        min: 0,
-                                        max: 100,
-                                        callback: function (value) {
-                                        return (value / this.max * 100).toFixed(0) + '%'; // convert it to percentage
-                                        },
-                                    },
-                                    scaleLabel: {
-                                        display: true,
-                                        // labelString: 'Percentage',
-                                        },
-                                    },
-                                ],
-                                },
-                        }
-                    });
-                    </script> -->
                 
 
         </div>
@@ -165,9 +105,9 @@
 
                 <div  style="padding: 5rem 0rem 0rem 0rem; text-align: center">
 
-                        <p class="background-subtitle" style="padding: 0 0 1rem 0;">General Programming</p>
+                        <p class="background-subtitle" style="padding: 0 0 0.5rem 0;">General Programming</p>
                         <div style="text-align: center;">
-                            <canvas id="myChartProgramming" width="100" height="20"></canvas>
+                            <canvas id="myChartProgramming" width="60" height="20"></canvas>
                             <script>
                                 Chart.defaults.global.defaultFontFamily = "Lato";
                                 var ctx = document.getElementById('myChartProgramming').getContext('2d');
@@ -177,7 +117,7 @@
                                         labels: ['HTML', 'CSS', 'JavaScript', 'C', 'Java', 'Python', 'Elm'],
                                         datasets: [{
                                             label: false,
-                                            data: [90, 80, 70, 60, 20, 30, 50],
+                                            data: [90, 85, 70, 65, 75, 30, 50],
                                             backgroundColor: [
                                                 'rgba(54, 162, 235, 1)',
                                                 'rgba(54, 162, 235, 1)',
@@ -211,15 +151,17 @@
                                             xAxes: [{
                                                 ticks: {
                                                     fontColor: '#eeeeee',
+                                                    fontSize: 15,
                                                 },
                                                 barPercentage: 1,
                                                 categoryPercentage: 1,
-                                                barThickness: 50,
+                                                barThickness: 80,
                                             }],
                                             yAxes: [
                                                 {
                                                 ticks: {
                                                     fontColor: '#eeeeee',
+                                                    fontSize: 15,
                                                     min: 0,
                                                     max: 100,
                                                     callback: function (value) {
@@ -247,7 +189,7 @@
 
                         <p class="background-subtitle" style="padding: 0 0 1rem 0;">Graphics Design | Video and Audio Editing </p>
                         <div style="text-align: center;">
-                            <canvas id="myChartGraphics" width="100" height="20"></canvas>
+                            <canvas id="myChartGraphics" width="60" height="20"></canvas>
                             <script>
                                 Chart.defaults.global.defaultFontFamily = "Lato";
                                 var ctx = document.getElementById('myChartGraphics').getContext('2d');
@@ -295,15 +237,17 @@
                                             xAxes: [{
                                                 ticks: {
                                                     fontColor: '#eeeeee',
+                                                    fontSize: 15,
                                                 },
                                                 barPercentage: 1,
                                                 categoryPercentage: 1,
-                                                barThickness: 50,
+                                                barThickness: 80,
                                             }],
                                             yAxes: [
                                                 {
                                                 ticks: {
                                                     fontColor: '#eeeeee',
+                                                    fontSize: 15,
                                                     min: 0,
                                                     max: 100,
                                                     callback: function (value) {
@@ -329,7 +273,7 @@
                 
 
 
-                <div style="padding: 2rem 2rem 2rem 2rem; display: flex;">
+                <div style="padding: 8rem 2rem 0rem 2rem; display: flex;">
 
                     <div class="column" style="text-align: center; padding: 1vw 1vw 1vw 1vw">
                         <p class="background-subtitle"># of Projects Completed</p>
@@ -349,8 +293,8 @@
     
                 </div>
 
-
                 <div class="resume-button" style="text-align: center; padding: 2rem 0 0 0;">
+                        <p class="background-subtitle" style="padding: 0 0 0.5rem 0;">My background in more detail.</p>
                         <button onclick="window.location.href='./resume.html'" class="slide">&nbsp;</button>
 
                 </div>
