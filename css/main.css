@@ -47,7 +47,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 30px;
     /* color: #ffffff; */
      
@@ -238,4 +238,104 @@ p.background-description {
 
 
 
+.button {
+    font-weight: 100;
+        -webkit-box-align: center;
+        align-items: center;
+    border: 0.75px solid rgba(54, 162, 235);
+    border-radius: 0.75rem;
+    color: #eeeeee;
+    background: rgba(54, 162, 235, 0);
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    -ms-flex-align: center;
+    margin: 0.5% !important;
+    max-width: 100%;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-decoration: none;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+        user-select: none;
+    outline: 0;
+    overflow:hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition:         0.08s ease-in;
+    -o-transition:      0.08s ease-in;
+    -ms-transition:     0.08s ease-in;
+    -moz-transition:    0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+  }
 
+
+
+
+  button {
+    position: relative;
+    //display:block;
+    height: 4rem;
+    width: 16rem;
+    margin: 10px 7px;
+    padding: 1rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    color: #eeeeee;
+    border: 2px rgba(54, 162, 235) solid;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    outline: 0;
+    overflow:hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition:         0.4s ease-in;
+    -o-transition:      0.4s ease-in;
+    -ms-transition:     0.4s ease-in;
+    -moz-transition:    0.4s ease-in;
+    -webkit-transition: 0.4s ease-in;
+  }
+  
+  .slide:after{
+    content:"Resume";
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    text-align:center;
+    -webkit-transition: all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+    color:#eeeeee;
+  }
+  
+  .slide:before {
+    content:"→";
+    height:100%;
+    width:100%;
+    position:absolute;
+    color:rgb(40, 40, 40);
+    left:-100%;
+    opacity: 0;
+    -webkit-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+  }
+  
+  .slide:hover{
+    background:rgb(40, 40, 40);
+  }
+  
+  .slide:hover:before{
+    left:0;
+    opacity:1;
+    color:#eeeeee;
+  }
+  .slide:hover:after{
+    left:100%;
+    opacity:0;
+  }

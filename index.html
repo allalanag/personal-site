@@ -12,6 +12,8 @@
     gtag('config', 'UA-135972488-1');
     </script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Maanav's Site</title>
@@ -25,18 +27,17 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/mainMobile.css" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/graph.css" />
     
-    <!-- Graphs -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
     <!-- Font Awesome --> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="main.js"></script>
+    <script src="./js/main.js"></script>
 
 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
 
 </head>
 <body>
@@ -84,13 +85,69 @@
                     <p class="about-description">I look to work with any new tech I can get my hand on, often implementing them in side projects to enhance my understanding.</p>
                     <p class="about-description">I also love drawing and designing, learning how to cook beautiful food, reading classic novels, trying different teas, playing board games and going to the gym.</p>
                 </div>
-                <div>
-                    <div class="about-profile">
-                        <!-- <img class="about-profile" src="./images/profile.jpg" alt="Profile">  -->
-                    </div>
-                </div>
+
+
+<!-- 
+                <canvas id="myChartProgramming" width="400" height="400"></canvas>
+                <script>
+                    var ctx = document.getElementById('myChartProgramming').getContext('2d');
+                    var myChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['HTML', 'CSS', 'JavaScript', 'C', 'Java', 'Python', 'Elm'],
+                            datasets: [{
+                                label: false,
+                                data: [90, 80, 70, 60, 20, 30, 50],
+                                backgroundColor: [
+                                    'rgba(255, 99, 132, 0.2)',
+                                    'rgba(54, 162, 235, 0.2)',
+                                    'rgba(255, 206, 86, 0.2)',
+                                    'rgba(75, 192, 192, 0.2)',
+                                    'rgba(153, 102, 255, 0.2)',
+                                    'rgba(255, 159, 64, 0.2)',
+                                    'rgba(255, 99, 132, 0.2)'
+
+                                ],
+                                borderColor: [
+                                    'rgba(255, 99, 132, 1)',
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 206, 86, 1)',
+                                    'rgba(75, 192, 192, 1)',
+                                    'rgba(153, 102, 255, 1)',
+                                    'rgba(255, 159, 64, 1)',
+                                    'rgba(255, 99, 132, 1)',
+
+                                ],
+                                borderWidth: 1
+
+                            }]
+                        },
+                        options: {
+                            legend: { 
+                                display: false 
+                            },
+                            scales: {
+                                yAxes: [
+                                    {
+                                    ticks: {
+                                        min: 0,
+                                        max: 100,
+                                        callback: function (value) {
+                                        return (value / this.max * 100).toFixed(0) + '%'; // convert it to percentage
+                                        },
+                                    },
+                                    scaleLabel: {
+                                        display: true,
+                                        // labelString: 'Percentage',
+                                        },
+                                    },
+                                ],
+                                },
+                        }
+                    });
+                    </script> -->
                 
-            
+
         </div>
 
 
@@ -106,21 +163,170 @@
                 </div>
 
 
-                <div class="row" style="padding: 2rem 2rem 2rem 2rem; text-align: center">
+                <div  style="padding: 5rem 0rem 0rem 0rem; text-align: center">
 
-                    <div class="column">
-                        <p class="background-subtitle">General Programming</p>
-                    </div>
-
-                    <div class="column">
-                        <p class="background-subtitle">Graphic Design</p>
-                    </div>
-
-                    <div class="column">
-                        <p class="background-subtitle">Miscellaneous</p>
-                    </div>
-
+                        <p class="background-subtitle" style="padding: 0 0 1rem 0;">General Programming</p>
+                        <div style="text-align: center;">
+                            <canvas id="myChartProgramming" width="100" height="20"></canvas>
+                            <script>
+                                Chart.defaults.global.defaultFontFamily = "Lato";
+                                var ctx = document.getElementById('myChartProgramming').getContext('2d');
+                                var myChart = new Chart(ctx, {
+                                    type: 'bar',
+                                    data: {
+                                        labels: ['HTML', 'CSS', 'JavaScript', 'C', 'Java', 'Python', 'Elm'],
+                                        datasets: [{
+                                            label: false,
+                                            data: [90, 80, 70, 60, 20, 30, 50],
+                                            backgroundColor: [
+                                                'rgba(54, 162, 235, 1)',
+                                                'rgba(54, 162, 235, 1)',
+                                                'rgba(54, 162, 235, 1)',
+                                                'rgba(54, 162, 235, 1)',
+                                                'rgba(54, 162, 235, 1)',
+                                                'rgba(54, 162, 235, 1)',
+                                                'rgba(54, 162, 235, 1)',
+            
+                                            ],
+                                            borderColor: [
+                                                'rgba(54, 162, 235, 0.5)',
+                                                'rgba(54, 162, 235, 0.5)',
+                                                'rgba(54, 162, 235, 0.5)',
+                                                'rgba(54, 162, 235, 0.5)',
+                                                'rgba(54, 162, 235, 0.5)',
+                                                'rgba(54, 162, 235, 0.5)',
+                                                'rgba(54, 162, 235, 0.5)',
+                                            ],
+                                            borderWidth: 1
+            
+                                        }]
+                                    },
+                                    options: {
+                                        
+                                        responsive: true,
+                                        legend: { 
+                                            display: false 
+                                        },
+                                        scales: {
+                                            xAxes: [{
+                                                ticks: {
+                                                    fontColor: '#eeeeee',
+                                                },
+                                                barPercentage: 1,
+                                                categoryPercentage: 1,
+                                                barThickness: 50,
+                                            }],
+                                            yAxes: [
+                                                {
+                                                ticks: {
+                                                    fontColor: '#eeeeee',
+                                                    min: 0,
+                                                    max: 100,
+                                                    callback: function (value) {
+                                                    return (value / this.max * 100).toFixed(0) + '%'; // convert it to percentage
+                                                    },
+                                                },
+                                                scaleLabel: {
+                                                    display: true,
+                                                    // labelString: 'Percentage',
+                                                    },
+                                                },
+                                            ],
+                                            },
+                                    }
+                                });
+                            </script>
+                        </div>
                 </div>
+
+
+
+
+
+                <div  style="padding: 5rem 0rem 0rem 0rem; text-align: center">
+
+                        <p class="background-subtitle" style="padding: 0 0 1rem 0;">Graphics Design | Video and Audio Editing </p>
+                        <div style="text-align: center;">
+                            <canvas id="myChartGraphics" width="100" height="20"></canvas>
+                            <script>
+                                Chart.defaults.global.defaultFontFamily = "Lato";
+                                var ctx = document.getElementById('myChartGraphics').getContext('2d');
+                                var myChart = new Chart(ctx, {
+                                    type: 'bar',
+                                    data: {
+                                        labels: ['Photoshop', 'Illustrator', 'InDesign', 'Sketch', 'Premiere', 'Final Cut', 'iMovie', 'Audacity'],
+                                        datasets: [{
+                                            label: false,
+                                            data: [90, 65, 60, 95, 70, 80, 85, 80],
+                                            backgroundColor: [
+                                                'rgba(54, 162, 235, 1)',
+                                                'rgba(54, 162, 235, 1)',
+                                                'rgba(54, 162, 235, 1)',
+                                                'rgba(54, 162, 235, 1)',
+                                                'rgba(54, 162, 235, 1)',
+                                                'rgba(54, 162, 235, 1)',
+                                                'rgba(54, 162, 235, 1)',
+                                                'rgba(54, 162, 235, 1)',
+
+                                                
+                                            ],
+                                            borderColor: [
+                                                'rgba(54, 162, 235, 0.5)',
+                                                'rgba(54, 162, 235, 0.5)',
+                                                'rgba(54, 162, 235, 0.5)',
+                                                'rgba(54, 162, 235, 0.5)',
+                                                'rgba(54, 162, 235, 0.5)',
+                                                'rgba(54, 162, 235, 0.5)',
+                                                'rgba(54, 162, 235, 0.5)',
+                                                'rgba(54, 162, 235, 0.5)',
+                                            ],
+                                            borderWidth: 1
+            
+                                        }]
+                                    },
+                                    options: {
+                                        
+                                        responsive: true,
+                                        legend: { 
+
+                                            display: false 
+                                        },
+                                        scales: {
+                                            xAxes: [{
+                                                ticks: {
+                                                    fontColor: '#eeeeee',
+                                                },
+                                                barPercentage: 1,
+                                                categoryPercentage: 1,
+                                                barThickness: 50,
+                                            }],
+                                            yAxes: [
+                                                {
+                                                ticks: {
+                                                    fontColor: '#eeeeee',
+                                                    min: 0,
+                                                    max: 100,
+                                                    callback: function (value) {
+                                                    return (value / this.max * 100).toFixed(0) + '%'; // convert it to percentage
+                                                    },
+                                                },
+                                                scaleLabel: {
+                                                    display: true,
+                                                    // labelString: 'Percentage',
+                                                    },
+                                                },
+                                            ],
+                                            },
+                                    }
+                                });
+                            </script>
+                        </div>
+                </div>
+
+
+
+
+                
 
 
                 <div style="padding: 2rem 2rem 2rem 2rem; display: flex;">
@@ -142,6 +348,15 @@
                     </div>
     
                 </div>
+
+
+                <div class="resume-button" style="text-align: center; padding: 2rem 0 0 0;">
+                        <button onclick="window.location.href='./resume.html'" class="slide">&nbsp;</button>
+
+                </div>
+
+    
+    
                 
         </div>
 
@@ -298,8 +513,6 @@
     
     </div>
 
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script  src="js/index.js"></script>
 
 </body>
 </html>
