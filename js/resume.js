@@ -7,7 +7,7 @@ const work = [
     },
     {
     company: "McMaster University",
-    position: "Research Assitant - Faculty of Computing & Software"    
+    position: "Research Assistant - Faculty of Computing & Software"    
     },
     {
     company: "Mixem",
@@ -138,7 +138,7 @@ function technicalTemplate(section){
         <div class="resume-subsection-titlesection">
             <h2 class="resume-subsection-title">${section.name}</h2>
             <p class="resume-subsection-title">
-                <a href="${section.link}"><i class="${section.logo}"></i></a>
+                <a href="${section.link}" target="_blank"><i class="${section.logo}"></i></a>
                 ${section.linkName}
             </p> 
         </div>
