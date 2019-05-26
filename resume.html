@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135972488-1"></script>
     <script>
@@ -21,9 +20,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./css/resume.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/resumeMobile.css" />
     <!-- Font Awesome -->  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="main.js"></script>
-
-
+    <script src="./js/main.js"></script>
+    <script src="./js/resume.js"></script>
     
 </head>
 <body>
@@ -41,7 +39,6 @@
             </div>
         </div>
     </header>
-
 
     <div class="current" id="remove" style="background:rgb(50, 50, 50); color: #EEEEEE;">
 
@@ -65,7 +62,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="resume-main">
         
@@ -92,106 +88,25 @@
                             <h2 class="resume-subsection-title">Languages</h2>
                             <p class="resume-subsection-title">List of programming languges I know, in order of proficiency</p> 
                         </div>
-                        <div class="language">
-                            <label class="language">HTML</label>
-                            <label class="language">CSS / SASS</label>
-                            <label class="language">JavaScript</label>
-                            <label class="language">Python</label>
-                            <label class="language">C</label>
-                            <label class="language">Elm</label>
-                            <label class="language">Haskell</label>
-                        </div> 
+                        <div id="Language" class="language"></div> 
                 </div>
                 <div class="resume-subsection">
                         <div class="resume-subsection-titlesection">
                             <h2 class="resume-subsection-title">Frameworks & Technologies</h2>
                             <p class="resume-subsection-title">List of frameworks and technologies I've worked with</p> 
                         </div>
-                        <div class="language">
-                            
-                            <label class="language">Django</label>
-                            <label class="language">Angular</label>
-                            <label class="language">React</label>
-                            <label class="language">Rational Software Architect</label>
-                            <label class="language">WebSphere</label>
-                            <label class="language">Node.js</label>
-                            <label class="language">jQuery</label>
-                            <label class="language">Azure</label>
-                            <label class="language">Google Cloud</label>
-                            <label class="language">Leap Motion</label>
-                            <label class="language">Arduino</label>
-                            <label class="language">Raspberry Pi</label>
-                        </div> 
+                        <div id="Technologies" class="language"></div> 
                 </div>
 
             </div>
-
+       
+            
 <!-- Projects -->
             <div class="resume-section">
                 <h1 class="resume-section-title">Technical Projects</h1>
-
-                <div class="resume-subsection">
-                        <div class="resume-subsection-titlesection">
-                            <h2 class="resume-subsection-title">Chess Engine</h2>
-                            <p class="resume-subsection-title">
-                                <a href="https://github.com/Maanav-G/Chess"><i class="icon fab fa-github"></i></a>
-                                /Chess
-                            </p> 
-                        </div>
-                </div>
-
-                <div class="resume-subsection">
-                        <div class="resume-subsection-titlesection">
-                            <h2 class="resume-subsection-title">Blog</h2>
-                            <p class="resume-subsection-title">
-                                <a href="https://github.com/Maanav-G/Blog"><i class="icon fab fa-github"></i></a>
-                                /Blog
-                            </p> 
-                        </div>
-                </div>
-
-                <div class="resume-subsection">
-                        <div class="resume-subsection-titlesection">
-                            <h2 class="resume-subsection-title">DeltaHacks Website (2019)</h2>
-                            <p class="resume-subsection-title">
-                                <a href="https://www.deltahacks.com">
-                                deltahacks.com</a></p> 
-                        </div>
-                </div>
-
-                <div class="resume-subsection">
-                        <div class="resume-subsection-titlesection">
-                            <h2 class="resume-subsection-title">Waterloop (2018)</h2>
-                            <p class="resume-subsection-title">
-                                <a href="https://teamwaterloop.ca">
-                                teamwaterloop.ca </a></p> 
-                        </div>
-                </div>
-
-                <div class="resume-subsection">
-                        <div class="resume-subsection-titlesection">
-                            <h2 class="resume-subsection-title">Standardized Blockchain</h2>
-                            <p class="resume-subsection-title">
-                                <a href="https://github.com/Maanav-G/standard-blockchain"><i class="icon fab fa-github"></i></a>
-                                /standard-blockchain
-                            </p> 
-                        </div>
-                </div>
-
-                <div class="resume-subsection">
-                        <div class="resume-subsection-titlesection">
-                            <h2 class="resume-subsection-title">Google Extension: Media Launcher</h2>
-                            <p class="resume-subsection-title">
-                                <a href="https://github.com/Maanav-G/Media-Launcher---Google-Extension"><i class="icon fab fa-github"></i></a>
-                                /Media-Launcher---Google-Extension
-                            </p> 
-                        </div>
-                </div>
-
-
+                <div id="Technical"></div>
 
             </div>
-
 
         </div>
         <div class="column right">
@@ -211,93 +126,14 @@
 <!-- Work Expierience -->
             <div class="resume-section">
                 <h1 class="resume-section-title">Work Experience</h1>
-
-                <div class="resume-subsection">
-                        <div class="resume-subsection-titlesection">
-                            <h2 class="resume-subsection-title">IBM</h2>
-                            <p class="resume-subsection-title">Software Developer and Technical Analyst Intern</p> 
-                        </div>
-                            <!-- <p class="resume-subsection-description">
-                                Worked directly with the SIS Order Management Team and other members within the SIS Application Delivery organization. <br> 
-                                Designed and developed the backend and UI interface in Java to allow for in-house testing of the Price Server and MQ Access. <br> 
-                                Designed, developed and conducted document modifications to applications based on and related to user or system design specifications. <br> 
-                                Developed multiple back end components using C# and Java for the OMS Application. <br> 
-                                Periodically conducted back-end development integration testing (DIT) to locate flaws within the software - to ensure it meets the requirements that guided its design and development
-                            </p> -->
-                </div>
-
-                <div class="resume-subsection">
-                        <div class="resume-subsection-titlesection">
-                            <h2 class="resume-subsection-title">McMaster University</h2>
-                            <p class="resume-subsection-title">Faculty of Computing & Software</p> 
-                            <p class="resume-subsection-title">Research Assitant</p> 
-                        </div>
-                            <!-- <p class="resume-subsection-description">
-                                Worked under Dr. Christopher Anand of McMaster University by conducting research for artificial intelligence in education. <br> 
-                                Developed and altered preexisting softwares using Elm for in-house research on algebraic thinking.<br> 
-                                Provided constant support in designing various applications in Elm and Haskell for the OutReach initiative.<br> 
-                                Wrote specification documents and reports after consulting a team of engineers.<br> 
-                                In-charge of back end and front end website development and management using HTML, CSS and Javascript.<br> 
-                            </p> -->
-                </div>
-
-                <div class="resume-subsection">
-                        <div class="resume-subsection-titlesection">
-                            <h2 class="resume-subsection-title">Mixem</h2>
-                            <p class="resume-subsection-title">Front-End Developer Intern</p> 
-                        </div>
-                        <p class="resume-subsection-description"></p>
-                        <p class="resume-subsection-description"></p>
-                        <p class="resume-subsection-description"></p>                
-                </div>
-
+                <div id="Work"></div>
             </div>
 
 <!-- Extracurriculars -->
             <div class="resume-section">
                 <h1 class="resume-section-title">Extracurriculars</h1>
-
-                <div class="resume-subsection">
-                    <div class="resume-subsection-titlesection">
-                        <h2 class="resume-subsection-title">DeltaHacks</h2>
-                        <p class="resume-subsection-title">Faculty of Engineering, McMaster University</p> 
-                        <p class="resume-subsection-title">Head of Sponsorship</p> 
-                    </div>
-                </div>
-
-                <div class="resume-subsection">
-                        <div class="resume-subsection-titlesection">
-                            <h2 class="resume-subsection-title">IBM</h2>
-                            <p class="resume-subsection-title">Future Blue Lead</p> 
-                        </div>
-                </div>
-
-                <div class="resume-subsection">
-                        <div class="resume-subsection-titlesection">
-                            <h2 class="resume-subsection-title">McMaster Consulting Association</h2>
-                            <p class="resume-subsection-title">Faculty of Commerce, McMaster University</p> 
-                            <p class="resume-subsection-title">Associate - Technology Sector</p> 
-                        </div>
-                </div>
-
-                <div class="resume-subsection">
-                        <div class="resume-subsection-titlesection">
-                            <h2 class="resume-subsection-title">DeltaHacks</h2>
-                            <p class="resume-subsection-title">Faculty of Engineering, McMaster University</p> 
-                            <p class="resume-subsection-title">Website Development Lead</p> 
-                        </div>
-                </div>
-
-                <div class="resume-subsection">
-                        <div class="resume-subsection-titlesection">
-                            <h2 class="resume-subsection-title">Waterloop</h2>
-                            <p class="resume-subsection-title">Faculty of Engineering, University of Waterloo</p> 
-                            <p class="resume-subsection-title">Software Developer (Web and Embedded)</p> 
-                        </div>
-                </div>
-
+                <div id="Extracurriculars"></div>
             </div>
-
 
         </div>
         </div>
