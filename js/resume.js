@@ -2,83 +2,91 @@
 
 const work = [
     {
-    company: "IBM",
-    position: "Software Developer and Technical Analyst Intern"    
+        company: "IBM",
+        position: "Software Developer and Technical Analyst Intern",    
+        date: "May 2018 - Present"
     },
     {
-    company: "McMaster University",
-    position: "Research Assistant - Faculty of Computing & Software"    
+        company: "McMaster University",
+        position: "Research Assistant - Faculty of Computing & Software",
+        date: "Jan 2019 - Present"    
     },
     {
-    company: "Mixem",
-    position: "Front-End Developer Intern"    
+        company: "Mixem",
+        position: "Front-End Developer Intern", 
+        date: "Jan 2018 - May 2018"    
     },
 ];
 
 const extracurriculars = [
     {
-    company: "DeltaHacks",
-    subCompany: "Faculty of Engineering, McMaster University",
-    position: "Head of Sponsorship" 
+        company: "DeltaHacks",
+        subCompany: "Faculty of Engineering, McMaster University",
+        position: "Vice-President Sponsorship",
+        date: "May 2019 - Present" 
     },
     {
-    company: "IBM",
-    subCompany: "Future Blue",
-    position: "Lead of C&D and Social" 
+        company: "IBM",
+        subCompany: "Future Blue",
+        position: "Lead of C&D and Social",
+        date: "Jan 2019 - Present"    
     },
     {
-    company: "McMaster Consulting Association",
-    subCompany: "Faculty of Commerce, McMaster University",
-    position: "Associate - Technology Sector" 
+        company: "McMaster Consulting Association",
+        subCompany: "Faculty of Commerce, McMaster University",
+        position: "Associate - Technology Sector",
+        date: "Sept 2018 - Jan 2019"   
     },
     {
-    company: "DeltaHacks",
-    subCompany: "Faculty of Engineering, McMaster University",
-    position: "Website Development Lead" 
+        company: "DeltaHacks",
+        subCompany: "Faculty of Engineering, McMaster University",
+        position: "Website Development Lead",
+        date: "May 2018 - Jan 2019"
     },
     {
-    company: "Waterloop",
-    subCompany: "Faculty of Engineering, University of Waterloo",
-    position: "Software Developer (Web and Embedded)" 
+        company: "Waterloop",
+        subCompany: "Faculty of Engineering, University of Waterloo",
+        position: "Software Developer (Web and Embedded)",
+        date: "May 2018 - Aug 2018"
     },
 ];
 
 const technical = [
     {
-    name: "Chess Engine",
-    logo: "icon fab fa-github",
-    link: "https://github.com/Maanav-G/Chess",
-    linkName: "/Chess" 
+        name: "Chess Engine",
+        logo: "icon fab fa-github",
+        link: "https://github.com/Maanav-G/Chess",
+        linkName: "/Chess" 
     },
     {
-    name: "Blog",
-    logo: "icon fab fa-github",
-    link: "https://github.com/Maanav-G/Blog",
-    linkName: "/Blog"  
+        name: "Blog",
+        logo: "icon fab fa-github",
+        link: "https://github.com/Maanav-G/Blog",
+        linkName: "/Blog"  
     },
     {
-    name: "DeltaHacks Website (2019)",
-    logo: "icon fas fa-globe",
-    link: "https://www.deltahacks.com",
-    linkName: "deltahacks.com"  
+        name: "DeltaHacks Website (2019)",
+        logo: "icon fas fa-globe",
+        link: "https://www.deltahacks.com",
+        linkName: "deltahacks.com"  
     },
     {
-    name: "Waterloop (2018)",
-    logo: "icon fas fa-globe",
-    link: "https://teamwaterloop.ca",
-    linkName: "teamwaterloop.ca"  
+        name: "Waterloop (2018)",
+        logo: "icon fas fa-globe",
+        link: "https://teamwaterloop.ca",
+        linkName: "teamwaterloop.ca"  
     },
     {
-    name: "Standardized Blockchain",
-    logo: "icon fab fa-github",
-    link: "https://github.com/Maanav-G/standard-blockchain",
-    linkName: "/standard-blockchain"  
+        name: "Standardized Blockchain",
+        logo: "icon fab fa-github",
+        link: "https://github.com/Maanav-G/standard-blockchain",
+        linkName: "/standard-blockchain"  
     },
     {
-    name: "Google Extension: Media Launcher",
-    logo: "icon fab fa-github",
-    link: "https://github.com/Maanav-G/Media-Launcher---Google-Extension",
-    linkName: "/Media-Launcher-Google-Extension"  
+        name: "Google Extension: Media Launcher",
+        logo: "icon fab fa-github",
+        link: "https://github.com/Maanav-G/Media-Launcher---Google-Extension",
+        linkName: "/Media-Launcher-Google-Extension"  
     },
 ];
 
@@ -115,6 +123,7 @@ function workTemplate(section){
         <div class="resume-subsection-titlesection">
             <h2 class="resume-subsection-title">${section.company}</h2>
             <p class="resume-subsection-title">${section.position}</p> 
+            <p class="resume-subsection-title">${section.date}</p> 
         </div>
     </div>
     `;
@@ -127,6 +136,7 @@ function extracurricularsTemplate(section){
             <h2 class="resume-subsection-title">${section.company}</h2>
             <p class="resume-subsection-title">${section.subCompany}</p> 
             <p class="resume-subsection-title">${section.position}</p> 
+            <p class="resume-subsection-title">${section.date}</p> 
         </div>
     </div>
     `;
