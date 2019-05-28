@@ -30,14 +30,15 @@
     
     <!-- Font Awesome --> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="./js/main.js"></script>
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <script> // for fade away upon scroll
+        $(window).scroll(function(){
+            $(".fade").css("opacity", 2 - $(window).scrollTop() / 250);
+        });
+    </script>
 
 </head>
 <body>
@@ -47,7 +48,8 @@
             <div id="header-content">
             
                 <h2 class="header"><a href="./resume.html" target="_blank" style="text-decoration: none; color: #eeeeee;">resume</a></h2>   
-                <!-- <h2 class="header"><a href="" style="text-decoration: none; color: #eeeeee;;">about me</a></h2>            
+                <h2 class="header"><a href="#middle" style="text-decoration: none; color: #eeeeee;;">about me</a></h2> 
+                <!--            
                 <h2 class="header"><a href="" style="text-decoration: none; color: #eeeeee;;">skill set</a></h2>            
                 <h2 class="header"><a href="" style="text-decoration: none; color: #eeeeee;;">projects</a></h2> 
                 <h2 class="header"><a href="" style="text-decoration: none; color: #eeeeee;;">contact me</a></h2>                      -->
@@ -58,8 +60,9 @@
 
 
     <div class="container">
+            <div class="overlay"></div>
 
-        <div class="main">
+        <div class="fade main">
             <div class="title">
                 <img class="image-logo" src="./images/logo.svg" alt="Logo">
             </div>
@@ -88,9 +91,13 @@
             <div style="padding: 1.5vw;" id="removeMobile"></div>
                 <div>
                     <h1 class="about-title">About</h1>
-                    <p class="about-description">A computer science student and research assistant at McMaster University - currently working as a <b>Software Developer and Technical Analyst Intern</b> at IBM.</p>
-                    <p class="about-description">I look to work with any new tech I can get my hand on, often implementing them in side projects to enhance my understanding.</p>
-                    <p class="about-description">I also love drawing and designing, learning how to cook beautiful food, reading classic novels, trying different teas, playing board games and going to the gym.</p>
+
+                    
+                    <p class="about-description">
+                        Hi, my name is Maanav Garg - A <b>Computer Science</b> student at McMaster University, expecting to graduate April of 2021. 
+                        Currently, I'm working as a <b>Software Developer and Technical Analyst Intern</b> at IBM and as a <b>Research Assistant</b> at McMaster University, within the Faculty of Computing and Software.
+                        I look to work with any new tech I can get my hands on, often implementing them in side projects to enhance my understanding. 
+                    </p>
                 </div>
 
                 
