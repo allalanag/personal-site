@@ -121,7 +121,7 @@ function workTemplate(section){
     return `
     <div class="resume-subsection">
         <div class="resume-subsection-titlesection">
-            <h2 class="resume-subsection-title">${section.company}</h2>
+        <h2 class="resume-subsection-title">${section.company}</h2>
             <p class="resume-subsection-title">${section.position}</p> 
             <p class="resume-subsection-title">${section.date}</p> 
         </div>
@@ -175,3 +175,6 @@ window.onload = function(){
     document.getElementById("Language").innerHTML = `${language.map(languageTemplate).join('')}`
     document.getElementById("Technologies").innerHTML = `${technologies.map(technologiesTemplate).join('')}`
 };
+
+
+

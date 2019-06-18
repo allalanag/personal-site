@@ -10,6 +10,8 @@
 
     gtag('config', 'UA-135972488-1');
     </script>
+    <!-- accordion js -->
+
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -81,7 +83,6 @@
                 </div>
             </div>
 
-
 <!-- Skills -->
             <div class="resume-section">
                 <h1 class="resume-section-title">Skills</h1>
@@ -106,6 +107,7 @@
 <!-- Projects -->
             <div class="resume-section">
                 <h1 class="resume-section-title">Technical Projects</h1>
+
                 <div id="Technical"></div>
 
             </div>
@@ -132,5 +134,27 @@
         <div style="padding: 1.5vw;" id="removeMobile"></div>
 
     </div>
+
+
+
+    <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                    } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    } 
+                });
+            }  
+        </script>
+
+
+
+
 </body>
 </html>

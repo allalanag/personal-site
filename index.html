@@ -26,6 +26,7 @@
 
 
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main2.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/mainMobile.css" />
     
     <!-- Font Awesome --> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -36,445 +37,117 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
     <script> // for fade away upon scroll
         $(window).scroll(function(){
-            $(".fade").css("opacity", 2 - $(window).scrollTop() / 250);
+            $(".fade").css("opacity", 1 - $(window).scrollTop() / 250);
         });
     </script>
 
 </head>
 <body>
-
-    <div id="removeMobile">
-        <div id="header" >
-            <div id="header-content">
-            
-                <h2 class="header"><a href="./resume.html" target="_blank" style="text-decoration: none; color: #eeeeee;">resume</a></h2>   
-                <h2 class="header"><a href="#middle" style="text-decoration: none; color: #eeeeee;;">about me</a></h2> 
-                <!--            
-                <h2 class="header"><a href="" style="text-decoration: none; color: #eeeeee;;">skill set</a></h2>            
-                <h2 class="header"><a href="" style="text-decoration: none; color: #eeeeee;;">projects</a></h2> 
-                <h2 class="header"><a href="" style="text-decoration: none; color: #eeeeee;;">contact me</a></h2>                      -->
-                        
-            </div>
-        </div>
-    </div>
-
+        <p id="watermark">Maanav Garg</p>
 
     <div class="container">
-            <div class="overlay"></div>
-
-        <div class="fade main">
-            <div class="title">
-                <img class="image-logo" src="./images/logo.svg" alt="Logo">
-            </div>
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/maanavgarg/" target="_blank" style="text-decoration: none; color: #eeeeee;;"><i class="icon fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/Maanav-G" target="_blank" style="text-decoration: none; color: #eeeeee;;"><i class="icon fab fa-github"></i></a>
-                <a href="mailto: maanavgarg@icloud.com" target="_blank" style="text-decoration: none; color: #eeeeee;;"><i class="icon fas fa-envelope"></i></a>
-            </div>
-            <a class="scroll" href="#middle" style="
-
-            ">      
-                <p><b style="font-weight: 800">Scroll</b> down to continue or click here</p>
-            </a>
-        </div>
-                        
-
-
-        <div id="removeWeb" style="margin: 1rem 1rem 3rem 1rem; text-align: center">
-            <a href="./resume.html" style="text-decoration: none; color: rgb(40,40,40);"><label class="resume-link-mobile">resume</label></a>
-        </div>
-
-        <!-- <hr style="border: 1px solid black; width: 80%; margin-top: 1em; margin-bottom: 1em;" /> -->
-      
-        <div id="removeMobile">
-        <div class="about" id="middle">
-            <div style="padding: 1.5vw;" id="removeMobile"></div>
-                <div>
-                    <h1 class="about-title">About</h1>
-
-                    
-                    <p class="about-description">
-                        Hi, my name is Maanav Garg - A <b>Computer Science</b> student at McMaster University, expecting to graduate April of 2021. 
-                        Currently, I'm working as a <b>Software Developer and Technical Analyst Intern</b> at IBM and as a <b>Research Assistant</b> at McMaster University, within the Faculty of Computing and Software.
-                        I look to work with any new tech I can get my hands on, often implementing them in side projects to enhance my understanding. 
-                    </p>
+        <div class="row">
+            <div class="first">
+                <div class="me">
+                <div class="me-name">
+                    <h1>Maanav</h1>
+                    <h1 style="margin: 0.25em 0 0 0;">Garg</h1>
                 </div>
+                <div class="me-pages">
+                    <p>school schedule</p>
+                    <p><a href="./resume.html" target="_blank" style="text-decoration: none; color: black;">resume</a></p>
+                </div>
+                <div class="me-social">
+                        <a href="https://www.linkedin.com/in/maanavgarg/" target="_blank" style="text-decoration: none; color: black;"><i class="icon fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Maanav-G" target="_blank" style="text-decoration: none; color: black;"><i class="icon fab fa-github"></i></a>
+                        <a href="mailto: maanavgarg@icloud.com" target="_blank" style="text-decoration: none; color: black;"><i class="icon fas fa-envelope"></i></a>
+                        <a href="https://medium.com/@maanavgarg" target="_blank" style="text-decoration: none; color: black;"><i class="icon fab fa-medium"></i></a>
+                </div>
+                </div>
+            </div>
 
+
+            <div class="second">
+                <h2 style="text-align: center; margin: 0 0 2em 0; font-size: 1.75em;">background</h2>
+                <div class="background-languages">
+                <h2 style="margin: 0.5em 0 0.5em 0; padding: 0.5em 0 0.5em 0; border-bottom: 1px solid black; font-size: 1.25em; text-align: center;">languages I know</h2>
+                    <i class="languages fab fa-java"></i>
+                    <i class="languages fab fa-html5"></i>
+                    <i class="languages fab fa-css3-alt"></i>
+                    <i class="languages fab fa-python"></i>
+                    <i class="languages fab fa-js-square"></i>
+                </div>
+                <div class="background-languages">
+                <h2 style="margin: 0.5em 0 0.5em 0; padding: 0.5em 0 0.5em 0; border-bottom: 1px solid black; font-size: 1.25em; text-align: center;">things I can work with </h2>
+                    <i class="languages fab fa-react"></i>
+                    <i class="languages fab fa-node"></i>
+                    <i class="languages fab fa-app-store-ios"></i>
+                    <i class="languages fab fa-git-alt"></i>
+                    <i class="languages fab fa-angular"></i>
+                    <i class="languages fab fa-sass"></i>
+                </div>
                 
+            </div>
 
-        </div>
-        </div>
-
-
-
-
-
-        <!-- <div class="background" id="removeMobile">
-            <div style="padding: 1.5vw;"></div>
-                <div>
-                    <h1 class="background-title">Background</h1>
-                    <p class="about-description">
-                        I love to learn and work with new and emerging languages, frameworks and technologies. In the past I've worked on many projects, 
-                        wether they be during hackathons, my personal side projects, school assignments, or projects assigned to me at work.
-                    </p>
-                    <p class="about-description">Below you can see an overview of my technical experience</p>
-                </div>
-
-
-                <div  style="padding: 5rem 0rem 0rem 0rem; text-align: center">
-
-                        <p class="background-subtitle" style="padding: 0 0 0.5rem 0;">General Programming</p>
-                        <div style="text-align: center;">
-                            <canvas id="myChartProgramming" width="60" height="20"></canvas>
-                            <script>
-                                Chart.defaults.global.defaultFontFamily = "Lato";
-                                var ctx = document.getElementById('myChartProgramming').getContext('2d');
-                                var myChart = new Chart(ctx, {
-                                    type: 'bar',
-                                    data: {
-                                        labels: ['HTML', 'CSS', 'JavaScript', 'C', 'Java', 'Python', 'Elm'],
-                                        datasets: [{
-                                            label: false,
-                                            data: [90, 85, 70, 65, 75, 30, 50],
-                                            backgroundColor: [
-                                                'rgba(54, 162, 235, 1)',
-                                                'rgba(54, 162, 235, 1)',
-                                                'rgba(54, 162, 235, 1)',
-                                                'rgba(54, 162, 235, 1)',
-                                                'rgba(54, 162, 235, 1)',
-                                                'rgba(54, 162, 235, 1)',
-                                                'rgba(54, 162, 235, 1)',
-            
-                                            ],
-                                            borderColor: [
-                                                'rgba(54, 162, 235, 0.5)',
-                                                'rgba(54, 162, 235, 0.5)',
-                                                'rgba(54, 162, 235, 0.5)',
-                                                'rgba(54, 162, 235, 0.5)',
-                                                'rgba(54, 162, 235, 0.5)',
-                                                'rgba(54, 162, 235, 0.5)',
-                                                'rgba(54, 162, 235, 0.5)',
-                                            ],
-                                            borderWidth: 1
-            
-                                        }]
-                                    },
-                                    options: {
-                                        
-                                        responsive: true,
-                                        legend: { 
-                                            display: false 
-                                        },
-                                        scales: {
-                                            xAxes: [{
-                                                ticks: {
-                                                    fontColor: '#eeeeee',
-                                                    fontSize: 15,
-                                                },
-                                                barPercentage: 1,
-                                                categoryPercentage: 1,
-                                                barThickness: 80,
-                                            }],
-                                            yAxes: [
-                                                {
-                                                ticks: {
-                                                    fontColor: '#eeeeee',
-                                                    fontSize: 15,
-                                                    min: 0,
-                                                    max: 100,
-                                                    callback: function (value) {
-                                                    return (value / this.max * 100).toFixed(0) + '%'; // convert it to percentage
-                                                    },
-                                                },
-                                                scaleLabel: {
-                                                    display: true,
-                                                    // labelString: 'Percentage',
-                                                    },
-                                                },
-                                            ],
-                                            },
-                                    }
-                                });
-                            </script>
+            <div class="third">
+                <h1 style="margin: 0 0 2em 0; font-size: 1.75em;">technical</h1>
+                <div class="projects personal">
+                    <h2 style="margin: 0.5em 0 0.5em 0; padding: 0.5em 0 0.5em 0; border-bottom: 1px solid black; font-size: 1.25em;">personal side projects</h2>
+                    <div class="projects-list">
+                        <div class="projects-each">
+                            <p class="projects-title">Reccomendation Engine</p>
+                            <div class="projects-details">
+                            </div>
                         </div>
-                </div>
-
-
-
-
-
-                <div  style="padding: 5rem 0rem 0rem 0rem; text-align: center">
-
-                        <p class="background-subtitle" style="padding: 0 0 1rem 0;">Graphics Design | Video and Audio Editing </p>
-                        <div style="text-align: center;">
-                            <canvas id="myChartGraphics" width="60" height="20"></canvas>
-                            <script>
-                                Chart.defaults.global.defaultFontFamily = "Lato";
-                                var ctx = document.getElementById('myChartGraphics').getContext('2d');
-                                var myChart = new Chart(ctx, {
-                                    type: 'bar',
-                                    data: {
-                                        labels: ['Photoshop', 'Illustrator', 'InDesign', 'Sketch', 'Premiere', 'Final Cut', 'iMovie', 'Audacity'],
-                                        datasets: [{
-                                            label: false,
-                                            data: [90, 65, 60, 95, 70, 80, 85, 80],
-                                            backgroundColor: [
-                                                'rgba(54, 162, 235, 1)',
-                                                'rgba(54, 162, 235, 1)',
-                                                'rgba(54, 162, 235, 1)',
-                                                'rgba(54, 162, 235, 1)',
-                                                'rgba(54, 162, 235, 1)',
-                                                'rgba(54, 162, 235, 1)',
-                                                'rgba(54, 162, 235, 1)',
-                                                'rgba(54, 162, 235, 1)',
-
-                                                
-                                            ],
-                                            borderColor: [
-                                                'rgba(54, 162, 235, 0.5)',
-                                                'rgba(54, 162, 235, 0.5)',
-                                                'rgba(54, 162, 235, 0.5)',
-                                                'rgba(54, 162, 235, 0.5)',
-                                                'rgba(54, 162, 235, 0.5)',
-                                                'rgba(54, 162, 235, 0.5)',
-                                                'rgba(54, 162, 235, 0.5)',
-                                                'rgba(54, 162, 235, 0.5)',
-                                            ],
-                                            borderWidth: 1
-            
-                                        }]
-                                    },
-                                    options: {
-                                        
-                                        responsive: true,
-                                        legend: { 
-
-                                            display: false 
-                                        },
-                                        scales: {
-                                            xAxes: [{
-                                                ticks: {
-                                                    fontColor: '#eeeeee',
-                                                    fontSize: 15,
-                                                },
-                                                barPercentage: 1,
-                                                categoryPercentage: 1,
-                                                barThickness: 80,
-                                            }],
-                                            yAxes: [
-                                                {
-                                                ticks: {
-                                                    fontColor: '#eeeeee',
-                                                    fontSize: 15,
-                                                    min: 0,
-                                                    max: 100,
-                                                    callback: function (value) {
-                                                    return (value / this.max * 100).toFixed(0) + '%'; // convert it to percentage
-                                                    },
-                                                },
-                                                scaleLabel: {
-                                                    display: true,
-                                                    // labelString: 'Percentage',
-                                                    },
-                                                },
-                                            ],
-                                            },
-                                    }
-                                });
-                            </script>
+                        <div class="projects-each">
+                            <p class="projects-title">Chess Engine</p>
+                            <div class="projects-details">
+                            </div>
                         </div>
-                </div>
-
-
-
-
-                
-
-
-                <div style="padding: 8rem 2rem 0rem 2rem; display: flex;">
-
-                    <div class="column" style="text-align: center; padding: 1vw 1vw 1vw 1vw">
-                        <p class="background-subtitle"># of Projects Completed</p>
-                        <h1 class="background-subtitle">7</h1>
-
+                        <div class="projects-each">
+                            <p class="projects-title">Blog</p>
+                            <div class="projects-details">
+                            </div>
+                        </div>
                     </div>
-    
-                    <div class="column" style="text-align: center; padding: 1vw 1vw 1vw 1vw">
-                        <p class="background-subtitle"># of Coffees Consumed</p>
-                        <h1 class="background-subtitle">354</h1>
-                    </div>
-
-                    <div class="column" style="text-align: center; padding: 1vw 1vw 1vw 1vw">
-                        <p class="background-subtitle"># of All-Nighters</p>
-                        <h1 class="background-subtitle">25</h1>
-                    </div>
-    
                 </div>
-
-                <div class="resume-button" style="text-align: center; padding: 2rem 0 0 0;">
-                        <p class="background-subtitle" style="padding: 0 0 0.5rem 0;">My background in more detail.</p>
-                        <button onclick="window.location.href='./resume.html'" class="slide">&nbsp;</button>
-
-                </div>
-
-    
-    
-                
-        </div> -->
-
-            
-      
-        <!-- <div class="background">
-            <div style="padding: 1.5vw;"></div>
-
-            <div class="row" style="padding: 1vw 1vw 1vw 1vw">
-                <div class="column" style="text-align: right; padding: 0 0vw 1vw 0vw">
-                    <p class="background-title">Skills</p>     
-                </div>
-                <div class="column">
-                </div>
-
-            </div>
-
-
-            <div class="row" style="padding: 1vw 1vw 1vw 1vw">
-
-                <div class="column" style="text-align: right; padding: 0 0vw 1vw 0vw">
-                   
-                        <h1 class="background-subtitle">General Programming</h1>
-
-                            <p class="background-description">I love to learn and work with new languges, frameworks and technologies. </p>
-
-                </div>
-
-                <div class="column">
-                   
-                </div>
-
-                
-        
-            </div>
-
-            <div class="row" style="padding: 1vw 1vw 1vw 1vw">
-
-                <div class="column" style="text-align: right; padding: 0 0vw 1vw 0vw">
-                    <h1 class="background-subtitle">Graphic Design</h1>
-                        <p class="background-description">I also dabble in graphic designing from time to time, as I even started off as a front-end developer. </p>
-                </div>
-
-                <div class="column">
-                    
-                </div>
-
-            </div>
-
-            <div class="row" style="padding: 1vw 1vw 1vw 1vw">
-
-                <div class="column" style="text-align: right; padding: 0 0vw 1vw 0vw">
-                    <h1 class="background-subtitle">Miscellaneous</h1>
-                    <p class="background-description">Everything else you might wanna know. </p>
-                </div>
-
-                <div class="column">
-                </div>
-
-            </div>
-
-            <div class="row" style="padding: 1vw 1vw 1vw 1vw">
-
-                    <div class="column" style="text-align: center; padding: 1vw 1vw 1vw 1vw">
-                        <p class="background-description"># of Projects</p>
-                        <h1 class="background-subtitle">7</h1>
-
-                    </div>
-    
-                    <div class="column" style="text-align: center; padding: 1vw 1vw 1vw 1vw">
-                        <p class="background-description"># of Coffees Consumed</p>
-                        <h1 class="background-subtitle">354</h1>
-                    </div>
-
-                    <div class="column" style="text-align: center; padding: 1vw 1vw 1vw 1vw">
-                        <p class="background-description"># of All-Nighters</p>
-                        <h1 class="background-subtitle">25</h1>
-                    </div>
-    
-                </div>
-
-
-
-        </div>    -->
-
-
-        <!-- <hr style="border: 1px solid black; width: 80%; margin-top: 1em; margin-bottom: 1em;" /> -->
-
-        <!-- <div class="projects">
-                <h1 class="main-name" style="text-align: center; margin-top:10em; margin-bottom: 1.5em;">Current Personal Projects</h1>
-
-
-                <section class="xop-container">
-                        <div class="xop-left">
-                            <article >
-                                <h1><a href="https://fonts.googleapis.com/css?family=Quicksand" style="text-decoration: none; color: #fff;">
-                                    Blog
-                                </a></h1> 
-                                <p>Used Python with Django 1.9 to develop a blog on a simple web application which is fully functional with admin dashboard support
+                <div class="projects job">
+                    <h2 style="margin: 0.5em 0 0.5em 0; padding: 0.5em 0 0.5em 0; border-bottom: 1px solid black; font-size: 1.25em;">internship projects</h2>
+                        <div class="projects-list">
+                            <div class="projects-each">
+                                <p class="projects-title" style="display: inline">
+                                    ServiceNow
+                                    <p style="font-size: 0.75em; display: inline;">IBM</p>
                                 </p>
-                                <a class="xop-button">Python</a>
-                                <a class="xop-button">Django</a>
-                                
-                            </article>
-                            
-
+                                <div class="projects-details">
+                                </div>
+                            </div>
+                            <div class="projects-each">
+                                <p class="projects-title">PriceServerStub
+                                    
+                                </p>
+                                <div class="projects-details">
+                                </div>
+                            </div>
+                            <div class="projects-each">
+                                <p class="projects-title">Rule-Engine</p>
+                                <div class="projects-details">
+                                </div>
+                            </div>
+                            <div class="projects-each">
+                                <p class="projects-title">JSON Generator</p>
+                                <div class="projects-details">
+                                </div>
+                            </div>
+                            <div class="projects-each">
+                                <p class="projects-title">PriceServerWeb</p>
+                                <div class="projects-details">
+                                </div>
+                            </div>
                         </div>
-                        <div class="xop-right"
-                        style="
-                        background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(164, 222, 102, 0.10)), url(http://i.imgur.com/EHjNb0j.jpg);
-                        background-size: cover;
-                        background-position: center;">
-                            <article>
-                                <h1>Chess Engine</h1>
-                                <a class="xop-button">Java</a>
-                            </article>
-                        </div>
-                </section> 
-    
-                <section class="xop-container">
-                    <div class="xop-left">
-                        <article>
-                            <h1>Web Developement</h1>
-                            <a class="xop-button">DeltaHacks: Gatsby</a>
-                            <a class="xop-button">Waterloop: React</a>
-                        </article>
-                    </div>
-                    <div class="xop-right" 
-                    style="
-                    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(164, 222, 102, 0.10)), url(http://i.imgur.com/EHjNb0j.jpg);
-                    background-size: cover;
-                    background-position: center;">
-                        <article>
-                            <h1>Standard Blockchain</h1>
-                            <p>
-                                Used Python 3 to develop a standard Blockchain, and it's functions, while using Postman to test functionalities.
-                                Developed the blockchain functions using external python libraries: requests, hashlib, flask, flask_cors and flask_jwt.    
-                            </p>
-                            <a class="xop-button">Python</a>
-                            <a class="xop-button">Angular</a>
-                        </article>
-                    </div>
-                    <div class="xop-left">
-                            <article>
-                                <h1>Roses</h1><a class="xop-button">click to view on github</a>
-                            </article>
-                    </div>
-                </section> 
-    
-                
-    
-        </div> -->
-          
-    
+                </div>
+            </div>
+        </div>
     </div>
-
-
 </body>
 </html>
