@@ -65,6 +65,12 @@ const technical = [
         linkName: "/Blog"  
     },
     {
+        name: "Speech to Text Translator",
+        logo: "icon fab fa-github",
+        link: "https://github.com/Maanav-G/Microsoft-Discover-Azure",
+        linkName: "/Microsoft-Discover-Azure"  
+    },
+    {
         name: "DeltaHacks Website (2019)",
         logo: "icon fas fa-globe",
         link: "https://www.deltahacks.com",
