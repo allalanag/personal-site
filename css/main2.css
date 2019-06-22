@@ -97,6 +97,7 @@
 
 
 .projects-list {
+    text-align: center;
 }
 
 .projects-each {
@@ -104,10 +105,26 @@
     border-bottom: 0.5px solid black;
     padding: 0.5em 0.5em 0.5em 1em;
     margin: 1em 0 1em 0;
+    text-align: left;
+    display: inline-block;
 }
 
 .projects-title {
     font-size: 1em;
+}
+
+.project-title-link {
+    text-decoration: none;
+    color: black;
+}
+.project-title-link:hover {
+    color: blue;
+}
+
+.project-tech {
+    border-left: 0.5px groove rgb(40, 40, 40);
+    font-size: 0.75em;
+    padding: 0 0 0 1em;
 }
 
 .projects-details {
@@ -130,16 +147,47 @@
 /* PROGRESS JS */
 
 .iconLan{
-    font-size: 3em;
-    padding: 0.25em;
+    font-size: 2.5em;
+}
 
+.label-logo {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
 }
 
 .load {
     display: inline-block;
     position: relative;
     margin: 0.5em ;
-    padding: 0.5em;
+    padding: 0;
     width: 7em;
     height: 3.5em;
+}
+
+
+
+label.language {
+    -webkit-box-align: center;
+    align-items: center;
+border-left: 0.5px groove rgb(40, 40, 40);
+overflow: auto;
+/* border-radius: 5rem; */
+color: rgb(40, 40, 40);
+display: -ms-inline-flexbox;
+display: -webkit-inline-box;
+display: inline-flex;
+display: -webkit-inline-flex;
+-ms-flex-align: center;
+margin: 0.5% !important;
+max-width: 100%;
+padding: 0 0 0 2em;
+font-weight: 300;
+font-size: 0.5rem;
+text-decoration: none;
+vertical-align: middle;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+    user-select: none;
 }
