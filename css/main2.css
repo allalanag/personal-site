@@ -52,6 +52,10 @@
     margin: 0 0 3em 0;
     padding: 0 0 0 0;
 }
+a.me-name-link {
+    text-decoration: none;
+    color: black;
+}
 .me-name h1 {
     font-size: 2em;   
 }
@@ -101,7 +105,7 @@
 }
 
 .projects-each {
-    width: 75%;
+    width: 80%;
     border-bottom: 0.5px solid black;
     padding: 0.5em 0.5em 0.5em 1em;
     margin: 1em 0 1em 0;
@@ -167,6 +171,8 @@
 
 
 
+
+
 label.language {
     -webkit-box-align: center;
     align-items: center;
@@ -190,4 +196,59 @@ vertical-align: middle;
 -moz-user-select: none;
 -ms-user-select: none;
     user-select: none;
+}
+
+div.viewResume-container {
+    text-align: center;
+}
+.viewResume {
+
+border: 0.5px groove rgb(40, 40, 40);
+overflow: auto;
+border-radius: 1rem;
+color: rgb(40, 40, 40);
+display: -ms-inline-flexbox;
+display: -webkit-inline-box;
+display: inline-flex;
+display: -webkit-inline-flex;
+-ms-flex-align: center;
+margin: 0.5% !important;
+max-width: 100%;
+padding: 0.5em 2em 0.5em 2em;
+/* font-weight: 300; */
+text-decoration: none;
+vertical-align: middle;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+    user-select: none;
+}
+
+
+.template {
+    width: 100%;
+    padding: 4em 10em 0 10em;
+    overflow: auto;
+}
+.template-title{
+    font-size: 1em;
+}
+.template-date{
+    font-size: 0.75em;
+}
+
+.leftside {
+    flex: 35%;
+    text-align: right;
+    padding: 0.5em 1.5em 0.5em 0.5em;
+    border-right: 0.5px groove rgb(40, 40, 40);
+}
+.template-detail {
+    flex: 65%;
+    text-align: left;
+    padding: 0.5em 0.5em 0.5em 1.5em;
+    font-size: 0.75em;
+    display: inline-block;
+    vertical-align: middle;
+
 }
