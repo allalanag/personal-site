@@ -4,34 +4,31 @@ const update = [
     {
         title: "IBM - AquaHacking",
         date: "June 15, 2019",
-        detail: "3 day conference at Deloitte, including an intense case competition, where my team and I placed 1st3 day conference at Deloitte, including an intense case competition, where my team and I placed 1st day conference at Deloitte, including an intense case competition, where my team and I placed 1st"
+        detail: ""
     },
     {
         title: "Deloitte National Leadership Conference",
         date: "June 9-12, 2019",    
-        detail: "3 day conference at Deloitte, including an intense case competition, where my team and I placed 1st3 day conference at Deloitte, including an intense case competition, where my team and I placed 1st day conference at Deloitte, including an intense case competition, where my team and I placed 1st"
+        detail: ""
     },
     {
         title: "FutureBlue Welcome Event",
         date: "May 17, 2019",
-        detail: "3 day conference at Deloitte, including an intense case competition, where my team and I placed 1st3 day conference at Deloitte, including an intense case competition, where my team and I placed 1st day conference at Deloitte, including an intense case competition, where my team and I placed 1st"
+        detail: ""
     },
     {
         title: "DeltaHacks - New Position",
         date: "May 1, 2019", 
-        detail: "3 day conference at Deloitte, including an intense case competition, where my team and I placed 1st3 day conference at Deloitte, including an intense case competition, where my team and I placed 1st day conference at Deloitte, including an intense case competition, where my team and I placed 1st"
+        detail: ""
     },
     {
         title: "IBM Tech Consulting Case Competition",
         date: "March 10, 2019", 
-        detail: "3 day conference at Deloitte, including an intense case competition, where my team and I placed 1st3 day conference at Deloitte, including an intense case competition, where my team and I placed 1st day conference at Deloitte, including an intense case competition, where my team and I placed 1st"
+        detail: ""
     },
 ];
 
 
-
-
- 
 
 
 

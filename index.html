@@ -115,11 +115,11 @@
                                             bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
                                             // bar.text.style.fontSize = '6rem';
                                 
-                                            bar.animate(0.75);  // Number from 0.0 to 1.0
-                            </script>
-                        <div id="swift" class="load" ></div>
+                                            bar.animate(0.70);  // Number from 0.0 to 1.0
+                            </script> 
+                        <div id="python" class="load"></div>
                             <script>
-                                            var bar = new ProgressBar.SemiCircle(swift, {
+                                            var bar = new ProgressBar.SemiCircle(python, {
                                             strokeWidth: 6,
                                             color: '#FFFFFF',
                                             trailColor: '#eee',
@@ -140,7 +140,7 @@
                                                 if (value === 0) {
                                                 bar.setText('');
                                                 } else {
-                                                bar.setText("<i class='iconLan devicon-swift-plain'></i><p class='label-logo'>swift</p>");
+                                                bar.setText("<i class='iconLan devicon-python-plain'></i><p class='label-logo'>python</p>");
                                                 }
                                 
                                                 bar.text.style.color = state.color;
@@ -149,7 +149,7 @@
                                             // bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
                                             // bar.text.style.fontSize = '6rem';
                                 
-                                            bar.animate(0.4);  // Number from 0.0 to 1.0
+                                            bar.animate(0.85);  // Number from 0.0 to 1.0
                             </script>
                         <div id="html" class="load"></div>
                             <script>
@@ -183,7 +183,7 @@
                                             // bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
                                             // bar.text.style.fontSize = '6rem';
                                 
-                                            bar.animate(0.8);  // Number from 0.0 to 1.0
+                                            bar.animate(0.9);  // Number from 0.0 to 1.0
                             </script>
                         <div id="css3" class="load"></div>
                             <script>
@@ -217,43 +217,9 @@
                                             // bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
                                             // bar.text.style.fontSize = '6rem';
                                 
-                                            bar.animate(0.8);  // Number from 0.0 to 1.0
+                                            bar.animate(0.95);  // Number from 0.0 to 1.0
                             </script>
-                        <div id="python" class="load"></div>
-                            <script>
-                                            var bar = new ProgressBar.SemiCircle(python, {
-                                            strokeWidth: 6,
-                                            color: '#FFFFFF',
-                                            trailColor: '#eee',
-                                            trailWidth: 1,
-                                            easing: 'easeInOut',
-                                            duration: 3500,
-                                            svgStyle: null,
-                                            text: {
-                                                value: '',
-                                                alignToBottom: false
-                                            },
-                                            from: {color: '#FFFFFF'},
-                                            to: {color: '#000000'},
-                                            // Set default step function for all animate calls
-                                            step: (state, bar) => {
-                                                bar.path.setAttribute('stroke', state.color);
-                                                var value = Math.round(bar.value() * 100);
-                                                if (value === 0) {
-                                                bar.setText('');
-                                                } else {
-                                                bar.setText("<i class='iconLan devicon-python-plain'></i><p class='label-logo'>python</p>");
-                                                }
-                                
-                                                bar.text.style.color = state.color;
-                                            }
-                                            });
-                                            // bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-                                            // bar.text.style.fontSize = '6rem';
-                                
-                                            bar.animate(0.75);  // Number from 0.0 to 1.0
-                            </script>
-                        <div id="javascript" class="load" style="margin: 3em 0.5em 0.5em 0.5em;"></div>
+                        <div id="javascript" class="load" ></div>
                             <script>
                                             var bar = new ProgressBar.SemiCircle(javascript, {
                                             strokeWidth: 6,
@@ -285,76 +251,9 @@
                                             // bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
                                             // bar.text.style.fontSize = '6rem';
                                 
-                                            bar.animate(0.75);  // Number from 0.0 to 1.0
+                                            bar.animate(0.8);  // Number from 0.0 to 1.0
                             </script>
-                        <div id="c" class="load" style="margin: 3em 0.5em 0.5em 0.5em;"></div>
-                            <script>
-                                            var bar = new ProgressBar.SemiCircle(c, {
-                                            strokeWidth: 6,
-                                            color: '#FFFFFF',
-                                            trailColor: '#eee',
-                                            trailWidth: 1,
-                                            easing: 'easeInOut',
-                                            duration: 3500,
-                                            svgStyle: null,
-                                            text: {
-                                                value: '',
-                                                alignToBottom: false
-                                            },
-                                            from: {color: '#FFFFFF'},
-                                            to: {color: '#000000'},
-                                            // Set default step function for all animate calls
-                                            step: (state, bar) => {
-                                                bar.path.setAttribute('stroke', state.color);
-                                                var value = Math.round(bar.value() * 100);
-                                                if (value === 0) {
-                                                bar.setText('');
-                                                } else {
-                                                bar.setText("<i class='iconLan devicon-c-plain'></i><p class='label-logo'>c</p>");
-                                                }
-                                
-                                                bar.text.style.color = state.color;
-                                            }
-                                            });
-                                            // bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-                                            // bar.text.style.fontSize = '6rem';
-                                
-                                            bar.animate(0.4);  // Number from 0.0 to 1.0
-                            </script>
-                        <div id="cplus" class="load" style="margin: 3em 0.5em 0.5em 0.5em;"></div>
-                            <script>
-                                            var bar = new ProgressBar.SemiCircle(cplus, {
-                                            strokeWidth: 6,
-                                            color: '#FFFFFF',
-                                            trailColor: '#eee',
-                                            trailWidth: 1,
-                                            easing: 'easeInOut',
-                                            duration: 3500,
-                                            svgStyle: null,
-                                            text: {
-                                                value: '',
-                                                alignToBottom: false
-                                            },
-                                            from: {color: '#FFFFFF'},
-                                            to: {color: '#000000'},
-                                            // Set default step function for all animate calls
-                                            step: (state, bar) => {
-                                                bar.path.setAttribute('stroke', state.color);
-                                                var value = Math.round(bar.value() * 100);
-                                                if (value === 0) {
-                                                bar.setText('');
-                                                } else {
-                                                bar.setText("<i class='iconLan devicon-cplusplus-plain'></i><p class='label-logo'>c++</p>");
-                                                }
-                                
-                                                bar.text.style.color = state.color;
-                                            }
-                                            });
-                                            // bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-                                            // bar.text.style.fontSize = '6rem';
-                                
-                                            bar.animate(0.5);  // Number from 0.0 to 1.0
-                            </script>
+
                     </div>
 
                     <div class="background-languages second">
@@ -375,6 +274,25 @@
                 <div class="row">
                 <div class="projects personal first">
                     <h2 style="text-align: center; margin: 0.5em 0 0.5em 0; padding: 0.5em 0 0.5em 0; border-bottom: 1px solid black; font-size: 1.25em;">personal side projects</h2>
+                    
+                    <!-- <div class="grid row2">
+                        <div class="column2" style="padding: 0 4px;">
+                            <img class="temp" src="./images/temp/1.jpg">
+                            <img class="temp" src="./images/temp/2.jpg">
+                            <img class="temp" src="./images/temp/3.jpg">
+                        </div>
+                        <div class="column2" style="padding: 0 4px;">
+                            <img class="temp" src="./images/temp/4.jpg">
+                            <img class="temp" src="./images/temp/5.png">
+                        </div>
+                        <div class="column2" style="padding: 0 4px;">
+                            <img class="temp" src="./images/temp/4.jpg">
+                            <img class="temp" src="./images/temp/5.png">
+                        </div>
+                    </div> -->
+                    
+                    
+                    
                     <div class="projects-list">
                         <div class="projects-each">
                             <p class="projects-title"><a class="project-title-link" href="https://github.com/Maanav-G/Recommendation-Engine" target="_blank">Reccomendation Engine</a></p>
