@@ -2,6 +2,11 @@
 
 const work = [
     {
+        company: "Deloitte Consulting",
+        position: "Incoming: Business Analyst - Technology Consulting",    
+        date: " May 2020"
+    },
+    {
         company: "IBM",
         position: "Software Developer and Technical Analyst Intern",    
         date: "May 2018 - Present"

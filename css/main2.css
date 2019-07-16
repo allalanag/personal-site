@@ -2,19 +2,19 @@
     margin: 0;
     padding: 0;
     width: 20%;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
     position: fixed;
     height: 100%;
     overflow: auto;
     padding: 3em;
-
-  }
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+}
 
   div.content {
     margin-left: 20%;
     /* padding: 3em; */
-    height: 1000px;
-  }
+    /* height: 1000px; */
+}
 
 
 
@@ -105,7 +105,7 @@ a.me-name-link {
 }
 
 .projects-each {
-    width: 80%;
+    width: 100%;
     border-bottom: 0.5px solid black;
     padding: 0.5em 0.5em 0.5em 1em;
     margin: 1em 0 1em 0;
@@ -163,9 +163,9 @@ a.me-name-link {
 .load {
     display: inline-block;
     position: relative;
-    margin: 2em 0.75em 0.75em 0.75em;
+    margin: 2em 1em 1em 1em;
     padding: 0;
-    width: 7em;
+    width: 5em;
     height: 3.5em;
 }
 
@@ -227,26 +227,24 @@ vertical-align: middle;
 
 .template {
     width: 100%;
-    padding: 4em 10em 0 10em;
+    padding: 2em 2em 0 2em;
     overflow: auto;
 }
 .template-title{
+    text-align: center;
     font-size: 1em;
 }
 .template-date{
+    text-align: center;
     font-size: 0.75em;
 }
 
 .leftside {
-    flex: 35%;
-    text-align: right;
-    padding: 0.5em 1.5em 0.5em 0.5em;
-    border-right: 0.5px groove rgb(40, 40, 40);
+    text-align: left;
+    border-bottom: 0.5px groove rgb(40, 40, 40);
 }
 .template-detail {
-    flex: 65%;
     text-align: left;
-    padding: 0.5em 0.5em 0.5em 1.5em;
     font-size: 0.75em;
     display: inline-block;
     vertical-align: middle;
