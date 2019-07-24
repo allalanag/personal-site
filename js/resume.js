@@ -27,7 +27,7 @@ const extracurriculars = [
     {
         company: "DeltaHacks",
         subCompany: "Faculty of Engineering, McMaster University",
-        position: "Vice-President Sponsorship",
+        position: "Vice President Sponsorship",
         date: "May 2019 - Present" 
     },
     {
@@ -57,6 +57,12 @@ const extracurriculars = [
 ];
 
 const technical = [
+    {
+        name: "Flight Price Tracker",
+        logo: "icon fab fa-github",
+        link: "https://github.com/Maanav-G/flight-prices",
+        linkName: "/flight-prices" 
+    },
     {
         name: "Chess Engine",
         logo: "icon fab fa-github",

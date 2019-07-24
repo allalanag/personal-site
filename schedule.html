@@ -16,7 +16,7 @@
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Schedule</title>
+    <title>Maanav's Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
@@ -24,104 +24,65 @@
     <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=yes" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/schedule.css" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main2.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/mainMobile.css" />
-    
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/schedule.css" />
+
+    <!-- Deviicon  --> <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <!-- Font Awesome --> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="./js/main.js"></script>
+    <script src="./js/updates.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <script> // for fade away upon scroll
+        $(window).scroll(function(){
+            $(".fade").css("opacity", 1 - $(window).scrollTop() / 250);
+        });
+    </script>
+    <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
 
 </head>
 <body>
+        <p id="watermark"></p>
+
+
+
     <div class="container">
-            <div class="table">
-                    <div class="row header">
-                        <div class="cell">
-                            <p>Year</p>
-                        </div>
-                        <div class="cell">
-                            <p>Fall</p>
-                        </div>
-                        <div class="cell">
-                            <p>Winter</p>
-                        </div>
-                        <div class="cell">
-                            <p>Summer</p>
-                        </div>
+
+            <div class="sidebar">
+                <div class="me">
+                    <div class="me-name">
+                        <a  class="me-name-link" href="./index.html">
+                        <h1>Maanav</h1>
+                        <h1 style="margin: 0.25em 0 0 0;">Garg</h1>
+                        </a>
                     </div>
-
-                    <div class="row">
-                        <div class="cell" data-title="Year">
-                            <p>
-                                2017 - 2018
-                            </p>
-                        </div>
-                        <div class="cell" data-title="Fall">
-                            <p>
-                                ANTHROP 1AA3</br>
-                                BIO 1M03</br>
-                                CHEM 1A03</br>
-                                MATH 1A03</br>
-                                PYSCH 1X03</br>
-                            </p>
-                        </div>
-                        <div class="cell" data-title="Winter">
-                            <p>
-                                BIO 1A03</br>
-                                ENG 1C03</br>
-                                MATH 1AA3</br>
-                                MATH 1B03</br>
-                                PHYS 1A03</br>
-                            </p>
-                        </div>
-                        <div class="cell" data-title="Summer">
-                            <p>
-                                CO-OP</br>
-                                IBM - IT Specialist Intern</br>
-                            </p>
-                        </div>
+                    <div class="me-pages">
+                        <!-- <p>school schedule</p> -->
+                        <p><a href="./resume.html" target="_blank" style="text-decoration: none; color: black;">resume </a></p>
+                        <p><a href="./event.html" style="text-decoration: none; color: black;">updates </a></p>
                     </div>
+                    <div class="me-social">
+                            <a href="https://www.linkedin.com/in/maanavgarg/" target="_blank" style="text-decoration: none; color: black;"><i class="icon fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/Maanav-G" target="_blank" style="text-decoration: none; color: black;"><i class="icon fab fa-github"></i></a>
+                            <a href="mailto: maanavgarg@icloud.com" target="_blank" style="text-decoration: none; color: black;"><i class="icon fas fa-envelope"></i></a>
+                            <a href="https://medium.com/@maanavgarg" target="_blank" style="text-decoration: none; color: black;"><i class="icon fab fa-medium"></i></a>
+                    </div>
+                </div>
+            </div>
 
 
-
-                    <div class="row">
-                            <div class="cell" data-title="Year">
-                                <p>
-                                    2018 - 2019
-                                </p>
-                            </div>
-                            <div class="cell" data-title="Fall">
-                                <p>
-
-                                </p>
-                            </div>
-                            <div class="cell" data-title="Winter">
-                                <p>
-                                    CO-OP</br>
-                                    IBM - Software Developer Intern</br>
-                                </p>
-                            </div>
-                            <div class="cell" data-title="Summer">
-                                <p>
-
-                                </p>
-                            </div>
-                        </div>
-
-
-
-
-
-
-                </div>            
+            <div class="content">
+                <div class="grid"> 
+                    askdjqsakl
+                </div>
+            </div>
 
     </div>
 </body>
 </html>
-
-
-
-

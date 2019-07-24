@@ -4,7 +4,7 @@ const personal = [
     {
         title: "Reccomendation Engine", 
         link: "https://github.com/Maanav-G/Recommendation-Engine",
-        detail: "~ In Progress ~"
+        detail: "A data science project that recommends the user a set of movies, based on a user-inputted movie, with a similarity score. Created using Python, and served on a web app using flask."
     },
     {
         title: "Chess Engine", 
