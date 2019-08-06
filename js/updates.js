@@ -2,45 +2,58 @@
 
 const personal = [
     {
-        title: "Reccomendation Engine", 
+        title: "Recommendation Engine", 
+        date: "June 2019 - Present",
         link: "https://github.com/Maanav-G/Recommendation-Engine",
         detail: "A data science project that recommends the user a set of movies, based on a user-inputted movie, with a similarity score. Created using Python, and served on a web app using flask."
     },
     {
         title: "Chess Engine", 
+        date: "January 2019 - Present",
         link: "https://github.com/Maanav-G/Chess",
         detail: "Used Java to create a fully-functional chess engine from scratch and incorporated a standardized artificial intelligence for the user to compete against"
     },
     {
         title: "Blog", 
+        date: "October 2018 - December 2018",
         link: "https://github.com/Maanav-G/Blog",
         detail: "A fully functioning blog web application created using Python with Django 1.9 with full admin dashboard support"
     },
     {
         title: "Speech-to-Text Translator", 
+        date: "July 2018",
         link: "https://github.com/Maanav-G/Microsoft-Discover-Azure",
         detail: "A fully functioning blog web application created using Python with Django 1.9 with full admin dashboard support"
     },
     {
         title: "DeltaHacks - Website", 
+        date: "October 2018 - Present",
         link: "https://www.deltahacks.com",
         detail: "Developed a website for McMaster University’s largest Hackathon, using HTML, CSS and Javascript with the Vue.js framework"
     },
     {
         title: "Waterloop - Website", 
+        date: "May 2018 - January 2019",
         link: "https://teamwaterloop.ca",
         detail: "Developed a website for the University of Waterloo’s Hyperloop team, using HTML, CSS and Javascript using the React framework"
     },
     {
         title: "Standardized Blockchain", 
+        date: "May 2018",
         link: "https://github.com/Maanav-G/standard-blockchain",
         detail: "Used Python 3 to develop a standard Blockchain and its functions, while using Postman to test functionalities. Developed the blockchain functions using external python libraries: requests, hashlib, flask, flask_cors and flask_jwt."
+    },
+    {
+        title: "Azure - Microsoft Machine Learning", 
+        date: "May 2018",
+        link: " ",
+        detail: "Created and tuned a machine learning model using Azure to predict if a given flight is likely to arrive on time or not."
     },
 ];
 
 const internship = [
     {
-        title: "MQAcess", 
+        title: "MQAccess", 
         subtitle: "@ IBM",
         detail: "Assisted the senior developer in building an access program, to place and get messages from the MQ database."
     },
@@ -67,7 +80,7 @@ const internship = [
     {
         title: "PriceServerWeb", 
         subtitle: "@ IBM",
-        detail: "Developed UI Page allowing SIS to verify the current realtime price of an order/stock given the specifications from Thompson Reuter."
+        detail: "Developed UI Page allowing SIS to verify the current real time price of an order/stock given the specifications from Thompson Reuter."
     },
 ];
 
@@ -95,7 +108,7 @@ const update = [
     {
         title: "FutureBlue (IBM) - Speed Networking Event",
         date: "June 1, 2019",
-        detail: "Ran a speed networking event that gave student the oppurtunity to learn about different roles and oppurtunities available at IBM"
+        detail: "Ran a speed networking event that gave students the opportunity to learn about the different roles and opportunities available at IBM."
     },
     {
         title: "New Position - Vice President Sponsorship, DeltaHacks",
@@ -125,15 +138,14 @@ const update = [
 
 function templateUpdate(section){
     return `
-    <div class="template">
-    <div class="leftside"> 
-        <p class="template-title">${section.title}</p>
-        <p class="template-date">${section.date}</p>
-    </div>
-    <div class="template-detail">
+    <div class="projects-each">
+    <p class="projects-title" style="display: inline">${section.title}</p>
+    <div class="projects-details">
+        <p>${section.date} </p> 
         <p>${section.detail}</p>
     </div>
     </div>
+
     `;
 };
 
@@ -141,8 +153,9 @@ function templateUpdate(section){
 function templatePersonal(section){
     return `
     <div class="projects-each">
-    <p class="projects-title"><a class="project-title-link" href="${section.link}" target="_blank">${section.title}</a></p>
+    <p class="projects-title" style="display: inline">${section.title} <a class="project-title-link" href="${section.link}" target="_blank"><i class=" fab fa-github"></i></a></p>
     <div class="projects-details">
+        <p>${section.date} </p> 
         <p>${section.detail}</p>
     </div>
     </div>
@@ -151,6 +164,7 @@ function templatePersonal(section){
 
 function templateInternship(section){
     return `
+
     <div class="projects-each">
     <p class="projects-title" style="display: inline">${section.title} <p style="font-size: 0.75em; display: inline;">${section.subtitle}</p></p>
     <div class="projects-details">

@@ -25,6 +25,12 @@ const work = [
 
 const extracurriculars = [
     {
+        company: "IBM",
+        subCompany: "Campus Recruiting Team",
+        position: "Student Campus Ambassador",
+        date: "Sept 2019 - Present" 
+    },
+    {
         company: "DeltaHacks",
         subCompany: "Faculty of Engineering, McMaster University",
         position: "Vice President Sponsorship",

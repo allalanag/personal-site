@@ -18,7 +18,17 @@
 
 
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 10000px) {
+    #mobile1 {
+        flex: none;
+    }
+    #mobile2 {
+        flex: none
+    }
+    #mobileRow {
+        display: relative;
+    }
+      
     .sidebar {
       width: 100%;
       height: auto;
@@ -27,7 +37,21 @@
     .me {
         text-align: left
     }
+    #remove {
+        display: none;
+    }
   }
+
+
+#mobile1 {
+    flex: 75%;
+}
+#mobile2 {
+    flex: 25%
+}
+/* #mobileRow {
+    display: flex;
+} */
   
 
 .first{
