@@ -50,8 +50,8 @@ a:hover {
 } */
 
 i.nav-icon {
-    font-size: 1.75em;
-    padding: 1em 5em;
+    font-size: 2em;
+    padding: 1vw 5vw;
 }
 
 
@@ -73,7 +73,7 @@ div.head-socials {
 
 div.about{
     text-align: center;
-    padding: 1em 4em 1em 4em;
+    padding: 1em 8em 1em 8em;
 }
 
 p.about-description {
@@ -214,7 +214,7 @@ i.icon {
     }    
     i.nav-icon {
         font-size: 2em;
-        padding: 0.5em 1em;
+        padding: 1vw 5vw;    
     }
     
     
