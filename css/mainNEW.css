@@ -220,6 +220,7 @@ h3.title {
     line-height: 250%;
 }
 p.subtitle{
+    font-size: 1.25em;
     display: block
 }
 
