@@ -217,7 +217,7 @@ div.work-header {
 h3.title {
     font-size: 2em;
     font-weight: 100;
-    line-height: 250%;
+    display: block;
 }
 p.subtitle{
     font-size: 1.25em;
@@ -277,12 +277,12 @@ p.caption {
     .column {
         flex: none;
         width: 90vw;
-        padding: 1em;
+        padding: 0em;
     }    
     .column-33 {
         flex: none;
         width: 90vw;
-        padding: 1em;
+        padding: 0em;
     }    
     i.nav-icon {
         font-size: 2em;
@@ -414,6 +414,13 @@ p.caption {
         color: black;
         margin: 1em 1em;
         font-size: 1.5em;
+    }
+    div.work-header {
+        text-align: center;
+        margin-top: 2em;
+    }
+    h3.subtitle{
+        text-align: left
     }
     
 
