@@ -7,24 +7,23 @@
     <title>Maanav's Website</title>
 
     <link rel="stylesheet" type="text/css" media="screen" href="./css/mainNEW.css" />
+    <link rel="stylesheet" href="/css/bootstrap-grid.css"/>
+    <link rel="stylesheet" href="/css/bootstrap-grid.min.css"/>
+    <link rel="stylesheet" href="/css/bootstrap-reboot.css"/>
+    <link rel="stylesheet" href="/css/bootstrap-reboot.min.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
 
     <script src="./js/updates.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
     <!-- Font Awesome --> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 </head>
-<body>
-    <!-- <div class="nav">
-        <div class="nav-position">
-            <a href="./resume.html" target="_blank" style="color: white"><i class="nav-icon fas fa-file"></i></a>
-            <a href="#contact" target="_blank" style="color: white"><i class="nav-icon fas fa-id-card-alt"></i></a>
-            <a href="#about" target="_blank" style="color: white"><i class="nav-icon fas fa-info-circle"></i></a>
-        </div>
-    </div> -->
-
+<body id="#">
     <div class="container">
         <div style="padding: 1.5em;"></div>
     
@@ -52,111 +51,405 @@
 
 
         </div>
-        <div class="head-socials">
+        <!-- <div class="head-socials">
                 <a href="./resume.html" target="_blank" style="color: rgb(30, 30, 30);"><i class="nav-icon fas fa-file"></i></a>
                 <a href="#contact" target="_blank" style="color: rgb(30, 30, 30);"><i class="nav-icon fas fa-id-card-alt"></i></a>
                 <a href="#about" target="_blank" style="color: rgb(30, 30, 30);"><i class="nav-icon fas fa-info-circle"></i></a>
-            </div>
-        <div id="about" class="about">
-            <p class="about-description">
-                Hi I’m Maanav! I’m studying Computer Science <a href="https://www.eng.mcmaster.ca/cas/programs/degree-options/basc/computer-science" target="_blank">@MacU</a>, in May 2020 I’ll be working as a Business Technology Analyst <a href="https://www2.deloitte.com/ca/en/pages/consulting/topics/consulting.html" target="_blank">@Deloitte</a>. 
-            </p>
-            <p class="about-description">
-                Thus far I’ve completed a 16-months internship <a href="https://www.ibm.com/services/technology?lnk=hpmse_ts_caen&lnk2=learn" target="_blank">@IBM</a> as a Technical Analyst and Software Developer in Toronto, and a term <a href="https://www.eng.mcmaster.ca/cas" target="_blank">@MacU</a> as a computing research assistant. In the meanwhile, I’m working on building predictive model of the upcoming NBA season, and learning the basics of UI/UX Design. 
-            </p>
+        </div> -->
 
+            <ul class="nav nav-tabs" id="myTab" role="tablist" style="padding: 0.5em 0.5em 0 0.5em;">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="project-tab" data-toggle="tab" href="#project" role="tab" aria-controls="project" aria-selected="false">personal projects</a>
+                </li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">work</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" id="ibm-tab" data-toggle="tab" href="#ibm" role="tab" aria-controls="ibm" aria-selected="false">IBM</a>
+                          <a class="dropdown-item" id="research-tab" data-toggle="tab" href="#research" role="tab" aria-controls="research" aria-selected="false">McMaster University - Computing and Software</a>
+                          <a class="dropdown-item" id="deltahacks-tab" data-toggle="tab" href="#deltahacks" role="tab" aria-controls="deltahacks" aria-selected="false">DeltaHacks</a>
+                          <a class="dropdown-item" id="waterloop-tab" data-toggle="tab" href="#waterloop" role="tab" aria-controls="waterloop" aria-selected="false">Waterloop</a>
+
+
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="./resume.html" target="_blank">resume</a>
+                        </div>
+                      </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="feed-tab" data-toggle="tab" href="#feed" role="tab" aria-controls="feed" aria-selected="false">updates</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" id="schedule-tab" data-toggle="tab" href="#schedule" role="tab" aria-controls="schedule" aria-selected="false">schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">contact</a>
+                </li>
+
+            </ul>
+
+
+            <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div id="about" class="about">
+                    <p class="about-description">
+                        Hi my name is Maanav! I’m a Computer Science Major <a href="https://www.eng.mcmaster.ca/cas/programs/degree-options/basc/computer-science" target="_blank">@MacU</a> and in May 2020 I’ll be working as a Business Technology Analyst <a href="https://www2.deloitte.com/ca/en/pages/consulting/topics/consulting.html" target="_blank">@Deloitte</a>. 
+                    </p>
+                    <p class="about-description">
+                        Thus far I’ve completed a 16-months internship <a href="https://www.ibm.com/services/technology?lnk=hpmse_ts_caen&lnk2=learn" target="_blank">@IBM</a> as a Technical Analyst and Software Developer in Toronto, a term <a href="https://www.eng.mcmaster.ca/cas" target="_blank">@MacU</a> as a computing Research Assistant and a part-time internship <a href="https://mixemapp.com" target="_blank">@Mixem</a>, as a Front-End Developer Intern.  In the meantime, I’m working on building a predictive model of the upcoming NBA season, and learning the basics of UI/UX Design. 
+                    </p>
+                    <p class="about-description">
+                        Aside from that, I’m currently the Vice President of Sponsorship <a href="https://www.deltahacks.com" target="_blank">@DeltaHacks</a> (McMaster’s own Hackathon) and a FutureBlue Lead and Student Campus Ambassador <a href="https://www.ibm.com/services/technology?lnk=hpmse_ts_caen&lnk2=learn" target="_blank">@IBM</a>.
+                    </p>
+                    <p class="about-description">
+                        For more, you can follow this link to see my <a href="./resume.html" target="_blank">resume</a>, otherwise, I invite to check out my website!
+                    </p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="project" role="tabpanel" aria-labelledby="project-tab">
+                    <div class="row">
+                        <div class="column">
+                            <h3 class="subtitle">technical projects</h3>
+                            <div class="projects personal first">
+                                <div class="projects-list">
+                                    <div id="personals"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+
+                        </div>
+                    </div>
+
+
+            </div>
+            <div class="tab-pane fade" id="feed" role="tabpanel" aria-labelledby="feed-tab">
+                <div class="column updates">
+                    <h3 class="subtitle">personal feed</h3>
+
+                    <div id="updates"></div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="schedule" role="tabpanel" aria-labelledby="schedule-tab">   
+                <div class="row" style="margin-top: 2em;">
+                        <div class="column-33">
+                            <p class="courses-title">Fall 2017</p>
+                            <div class="courses">
+                                <p class="courses">
+                                    MATH 1A03 </br><mini>Calculus for Engineering I</mini></br>
+                                    CHEM 1A03 </br><mini>Intro Chemistry I</mini></br>
+                                    BIO 1M03 </br><mini>Biodiversity Evolution</mini></br>
+                                    ANTHROP 1AA3 </br><mini>Anthropology Food and Death</mini></br>
+                                    PYSCH 1X03 </br><mini>Psychology - Neuroscience and Behaviour </mini></br>
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="column-33">
+                            <p class="courses-title">Winter 2018</p>
+                            <div class="courses">
+                                <p class="courses">
+                                    MATH 1AA3 </br><mini>Calculus for Engineering II</mini></br>
+                                    MATH 1B03 </br><mini>Linear Algebra I</mini></br>
+                                    ENG 1C03 </br><mini>Engineering Design</mini></br>
+                                    PHYS 1C03 </br><mini>Physics I</mini></br>
+                                    BIO 1A03 </br><mini>Molecular Biology</mini></br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column-33">
+                            <p class="courses-title">Summer 2018</p>
+                            <div class="courses">
+                                <p class="courses">
+                                    CO-OP </br><mini>IBM: Technical Analyst and Software Developer Intern</br>(16-months)</mini></br>
+                                </p>
+                            </div>
+                        </div>
+                </div>    
+                <div class="row">
+                        <div class="column-33">
+                            <p class="courses-title">Fall 2018</p>
+                            <div class="courses">
+                                <p class="courses">
+                                    CO-OP </br><mini>IBM: Technical Analyst and Software Developer Intern</br>(16-months)</mini></br>
+                                    COMPSCI 1MD3 </br><mini>Java Programming I</mini></br>
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="column-33">
+                            <p class="courses-title">Winter 2019</p>
+                            <div class="courses">
+                                <p class="courses">
+                                    CO-OP </br><mini>IBM: Technical Analyst and Software Developer Intern</br>(16-months)</mini></br>
+                                    CO-OP </br><mini>McMaster University: Research Assistant</br>(part-time)</mini></br>
+                                    MATH 2X03 </br><mini>Advanced Calculus I</mini></br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column-33">
+                            <p class="courses-title">Summer 2019</p>
+                            <div class="courses">
+                                <p class="courses">
+                                    CO-OP </br><mini>IBM: Technical Analyst and Software Developer Intern</br>(16-months)</mini></br>
+                                </p>
+                            </div>
+                        </div>
+                </div>     
+                <div class="row">
+                        <div class="column-33">
+                            <p class="courses-title">Fall 2019</p>
+                            <div class="courses">
+                                <p class="courses">
+                                    COMPSCI 2DM3 </br><mini>Discrete Mathematics with Applications I</mini></br>
+                                    COMPSCI 2S03 </br><mini>Principles of Programming</mini></br>
+                                    COMPSCI 2GA3 </br><mini>Computer Architecture</mini></br>
+                                    COMPSCI 2XA3 </br><mini>Computer Science Practice and Experience: Software Development Skills</mini></br>
+                                    COMPSCI 2XXX </br><mini>Unknown Technical Course</mini></br>
+                                    CO-OP </br><mini>IBM: Technical Analyst Intern</br>(part-time)</mini></br>
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="column-33">
+                            <p class="courses-title">Winter 2020</p>
+                            <div class="courses">
+                                <p class="courses">
+                                    COMPSCI 2FA3 </br><mini>Discrete Mathematics with Applications II</mini></br>
+                                    COMPSCI 2ME3 </br><mini>Introduction to Software Development</mini></br>
+                                    COMPSCI 2C03 </br><mini>Data Structures and Algorithms</mini></br>
+                                    COMPSCI 2XB3 </br><mini>Computer Science Practice and Experience: Binding Theory to Practice</mini></br>
+                                    COMPSCI 2XXX </br><mini>Unknown Technical Course</mini></br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column-33">
+                            <p class="courses-title">Summer 2020</p>
+                            <div class="courses">
+                                <p class="courses">
+                                    CO-OP</br><mini>(Incoming)</br>Deloitte Consulting: Business Technology Analyst </mini></br>
+                                    COMPSCI 3XXX </br><mini>Unknown Technical Course</mini></br>
+                                </p>
+                            </div>
+                        </div>
+                </div>      
+                <div class="row">
+                        <div class="column-33">
+                            <p class="courses-title">Fall 2020</p>
+                            <div class="courses">
+                                <p class="courses">
+                                    COMPSCI 3DB3 </br><mini>Data Bases</mini></br>
+                                    COMPSCI 3I03 </br><mini>Communication Skills</mini></br>
+                                    COMPSCI 3MI3 </br><mini>Principles of Programming Languages</mini></br>
+                                    COMPSCI 3SD3 </br><mini>Concurrent Systems</mini></br>
+                                    COMPSCI 3XXX </br><mini>Unknown Technical Course</mini></br>
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="column-33">
+                            <p class="courses-title">Winter 2021</p>
+                            <div class="courses">
+                                <p class="courses">
+                                    COMPSCI 3SH3 </br><mini>Computer Science Practice and Experience: Operating Systems</mini></br>
+                                    COMPSCI 3AC3 </br><mini>Algorithms and Complexity</mini></br>
+                                    COMPSCI 3XXX </br><mini>Unknown Technical Course</mini></br>
+                                    COMPSCI 3XXX </br><mini>Unknown Technical Course</mini></br>
+                                    COMPSCI 3XXX </br><mini>Unknown Technical Course</mini></br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column-33">
+                            <p class="courses-title">Summer 2021</p>
+                            <div class="courses">
+                                <p class="courses">
+                                    CO-OP</br><mini>Allocated Work Term</mini></br>
+                                    COMPSCI 4XXX </br><mini>Unknown Technical Course</mini></br>
+                                </p>
+                            </div>
+                        </div>
+                </div>      
+                <div class="row">
+                        <div class="column-33">
+                            <p class="courses-title">Fall 2021</p>
+                            <div class="courses">
+                                <p class="courses">
+                                    SEP 4EP3 </br><mini>New Enterprise Capstone </mini></br>
+                                    COMPSCI 4ZP6 A </br><mini>Capstone Project</mini></br>
+                                    COMPSCI 4XXX </br><mini>Unknown Technical Course</mini></br>
+                                    COMPSCI 4XXX </br><mini>Unknown Technical Course</mini></br>
+                                    COMPSCI 4XXX </br><mini>Unknown Technical Course</mini></br>
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="column-33">
+                            <p class="courses-title">Winter 2022</p>
+                            <div class="courses">
+                                <p class="courses">
+                                    COMPSCI 4C03 </br><mini>Computer Networks and Security</mini></br>
+                                    COMPSCI 4ZP6 B </br><mini>Capstone Project</mini></br>
+                                    COMPSCI 4TB3 </br><mini>Syntax-Based Tools and Compilers</mini></br>
+                                    COMPSCI 4XXX </br><mini>Unknown Technical Course</mini></br>
+                                    COMPSCI 4XXX </br><mini>Unknown Technical Course</mini></br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column-33">
+                            <p class="courses-title">Summer 2022</p>
+                            <div class="courses">
+                                <p class="courses">
+                                    Graduation</br><mini></mini></br>
+                                </p>
+                            </div>
+                        </div>
+                </div>      
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">    
+                    <div class="row">
+                            <div class="column">
+                                <div class="work-header">
+                                    <h3 class="title">Maanav Garg</h3>
+                                    <p class="subtitle">Undergraduate Computer Science Major</p> 
+                                </div>       
+                            </div>
+                            <div class="column">
+                                    <div class="work-header">
+                                        <p class="contact-header-detail"><a href="mailto:maanavgarg@icloud.com" target="_blank"><i class="icon2 fas fa-envelope"></i></a> maanavgarg@icloud.com</p>
+                                        <p class="contact-header-detail"><a href="https://github.com/Maanav-G" target="_blank"><i class="icon2 fab fa-github"></i></a> Maanav-G</p>
+                                        <p class="contact-header-detail"><a href="https://www.linkedin.com/in/maanavgarg/" target="_blank"><i class="icon2 fab fa-linkedin-in"></i></a> /maanavgarg</p>
+                                        <p class="contact-header-detail"><a href="https://medium.com/@maanavgarg" target="_blank"><i class="icon2 fab fa-medium"></i></a> @maanavgarg</p>
+                                        <p class="contact-header-detail"><a href="./files/Resume_07:07:19.pdf" download><i class="icon2 fas fa-file-pdf"></i></a> Download my resume</p>
+                                    </div>    
+                                
+                            </div>
+                        </div>
+            </div>
+            <div class="tab-pane fade" id="ibm" role="panel" aria-labelledby="ibm-tab"> 
+                <div class="work-header">
+                    <h3 class="title">IBM</h3>
+                    <p class="subtitle">Software Developer and Technical Analyst Intern</p> 
+                    <p class="subtitle">May 2018 - August 2019</p> 
+                </div>
+                <div class="row">
+                        <div class="column">
+                                <h3 class="subtitle">summary</h3>
+    
+                            <p class="work-description">
+                                After my freshman year at McMaster, I had the opportunity to experience my first co-op, at IBM as a Software Developer and Technical Analyst Intern, over the course of 16-months. Although I won’t be getting into details here, please do feel free to reach out and ask me about any of the following more!
+                            </p>
+                            <p class="work-description">
+                                Our department's main focus revolves around maintaining and improving our client’s order processing and back-end trading platforms. Our main goals are to help them improve their efficiency, and increase their overall processing power.
+                            </p>
+                            <p class="work-description">
+                                Due to the sheer length of this internship, my first few months severely focused on training of all the technologies I’d be using during my tenure. During this I was accompanied by a mentor and an overlapping intern, who just spent over a year in my role. As well as, support from my Delivery Manager and Program Manager.
+                            </p>
+                            <p class="work-description">
+                                In the beginning, my role primarily consisted of software development using Python and Java, for associates who consulted with our clients - TD, National Bank, Desjardins and HSBC. However, as I progressed within my role, I was given projects and tasks that allowed me to work client-side, which involved meeting with new and pre-existing clients to discuss their needs and specifications for their upcoming project and then develop technical mock-ups and presentations to use to recommend solutions and provide strategic advice to our clients. Throughout the 16-months, I worked on 21 different projects, while handling 2 of my own clients, TD and National Bank, for 8-months and 6-months respectively.
+                            </p>
+                            <p class="work-description">
+                                On a weekly basis, my role consisted of the following:
+                                <ul>
+                                <li>Designing and developing technical mocks-up, using IBM technologies</li> 
+                                <li>Conducting quantitative and qualitative analysis to judge how to maximize clients use of technology</li>
+                                <li>Arranging and attending client-meetings to discuss future projects or current progress</li>
+                                <li>Assessed and resolved incoming problem tickets from our testing team</li>
+                            </ul>
+                            </p>
+                            <p class="work-description">
+                                All in all, given that 16-months is longer than most internships, I was able to learn a lot more than I expected. The project-to-project culture assured I’d be learning and experiencing something new every few weeks, and I was able to work on not just my technical skills, but my soft skills as well.
+                            </p>
+    
+                        </div>
+                    <div class="column">
+                        
+                        <h3 class="subtitle">techincal projects</h3>
+                        <div class="projects personal first">
+                            <div class="projects-list">
+                                <div id="internships"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>  
+                <div style="text-align: center;">
+                    <a href="#" >back to the top...</a>
+                </div>
+                
+            </div>
+            <div class="tab-pane fade" id="research" role="panel" aria-labelledby="research-tab"> 
+                    <div class="work-header">
+                        <h3 class="title">McMaster University - Computing and Software</h3>
+                        <p class="subtitle">Dr. Christopher Anand - Research Assistant</p> 
+                        <p class="subtitle">May 2019 - April 2019</p> 
+                    </div>
+                    <div class="row">
+                            <div class="column">
+                                    <p class="subtitle">Coming Soon!</p>
+                            </div>
+                        <div class="column">
+                            
+                        </div>
+                        
+                    </div>  
+                    
+            </div>
+            <div class="tab-pane fade" id="deltahacks" role="panel" aria-labelledby="deltahacks-tab"> 
+                    <div class="row">
+                        <div class="column">
+                            <div class="work-header">
+                                <h3 class="title">DeltaHacks VI 2020</h3>
+                                <p class="subtitle">Vice President Sponsorship </p> 
+                                <p class="subtitle">January 2019 - January 2020</p> 
+                            </div>
+                            <p class="subtitle">Coming Soon!</p>
+                        </div>
+                        <div class="column">
+                            <div class="work-header">
+                                <h3 class="title">DeltaHacks V 2019</h3>
+                                <p class="subtitle">Website Designer and Developer</p> 
+                                <p class="subtitle">August 2018 - January 2029</p> 
+                            </div>
+                            <p class="subtitle">Coming Soon!</p>
+                            <p class="work-description">Link to finished <a href="https://teamwaterloop.ca" target="_blank">website</a>!</p>
+                        </div>
+                        
+                    </div>  
+                    
+            </div>
+            <div class="tab-pane fade" id="waterloop" role="panel" aria-labelledby="waterloop-tab"> 
+                    <div class="work-header">
+                        <h3 class="title">Waterloop</h3>
+                        <p class="subtitle">Website Designer and Developer</p> 
+                        <p class="subtitle">May 2018 - August 2018</p> 
+                    </div>
+                    <div class="row">
+                            <div class="column">
+                                    <p class="subtitle">Coming Soon!</p>
+                                    <p class="work-description">Link to finished <a href="https://teamwaterloop.ca" target="_blank">website</a>!</p>
+
+                            </div>
+                        <div class="column">
+                            
+                        </div>
+                        
+                    </div>  
+                    
+            </div>
+            </div>
            
 
-        </div>
-        <div id="removeFromMobile" style="padding: 1.5em;"></div>
-        <div class="row">
-            <div class="column">
-                <!-- <h3 class="subtitle">
-                    <select id="size_select" style="  
-                        -webkit-appearance: none; 
-                        -moz-appearance: none;
-                        appearance: none; 
-                        border: none;
-                        text-align: center;
-                        font-size: 1.25em;
-                        font-weight: 100;">
-                            <option value="option1">personal feed</option>
-                            <option value="option2">events</option>
-                        </select>
-                    </h3>
-                    
-                    <div id="option1" class="size_chart">
-                        <div id="updates"></div>
-                    </div>
-                    <div id="option2" class="size_chart">
-                        Page 2
-                    </div>
-                <script>
-                    $(document).ready(function(){
-                        //hides dropdown content
-                        $(".size_chart").hide();
-                        //unhides first option content
-                        $("#option1").show();
-                        //listen to dropdown for change
-                        $("#size_select").change(function(){
-                            //rehide content on change
-                            $('.size_chart').hide();
-                            //unhides current item
-                            $('#'+$(this).val()).show();
-                        });
-                    });
-                </script> -->
-            <h3 class="subtitle">personal feed</h3>
-            <div id="updates"></div>
+        
 
-            </div>
-            <div class="column">
-                <h3 class="subtitle">personal projects</h3>
-                <div class="row">
-                    <div class="projects personal first">
-                        <div class="projects-list">
-                            <div id="personals"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <h3 class="subtitle">techincal internship projects</h3>
-                <div class="row">
-                    <div class="projects personal first">
-                        <div class="projects-list">
-                            <div id="internships"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="removeFromMobile" style="padding: 3em;"></div>
-
-        <div id="contact" class="contact"> 
-            <div class="contact-content">
-                <h3 class="contact-title">
-                        &#60; MAANAV / &#62;
-                </h3>
-                <p class="contact-subtitle">Undergraduate Computer Science and Management Major</p>    
-                <div id="removeFromMobile" style="padding: 1em;"></div>
-                <div class="contact-social">
-                    <a href="mailto:maanavgarg@icloud.com" target="_blank"><i class="icon fas fa-envelope"></i></a>
-                    <a href="https://github.com/Maanav-G" target="_blank"><i class="icon fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/maanavgarg/" target="_blank"><i class="icon fab fa-linkedin-in"></i></a> 
-                    <a href="./files/Resume_07:07:19.pdf" download><i class="icon fas fa-file-pdf"></i></a>
-                    <a href="https://medium.com/@maanavgarg" target="_blank"><i class="icon fab fa-medium"></i></a>
-                </div>     
-                
-                <footer style="text-align: center;">
-                        <div id="removeFromMobile" style="padding: 1em;"></div>
-                        created with <i class="fas fa-coffee" style="margin: 0 0.25em 0 0.25em"></i> by Maanav Garg. 
-                        <div style="padding: 1em;"></div>
-                </footer>
-            </div>
-        </div>
-        <div id="removeFromMobile" style="padding: 3em;"></div>
+ 
 
     </div>
+    <div id="removeFromMobile" style="padding: 3em;"></div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
