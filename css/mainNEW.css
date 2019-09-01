@@ -243,6 +243,12 @@ p.caption {
     padding: 0.5em 7em 2em 7em;
 }
 
+td {
+    text-align: center;
+}
+th {
+    text-align: center;
+}
 
 
 @media (max-width: 1000px) {
@@ -425,5 +431,6 @@ p.caption {
     
 
 }
+
 
 
