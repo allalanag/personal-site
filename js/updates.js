@@ -2,10 +2,16 @@
 
 const personal = [
     {
-        title: "Recommendation Engine", 
+        title: "NBA Rookie Statistics Predictor", 
+        date: "July 2019 - Present",
+        link: "https://github.com/Maanav-G/NBA-rookie-statistics-analysis",
+        detail: "A machine learning model that predicts the statistics of the NBA’s 2019-2020 season rookies"
+    },
+    {
+        title: "Reccomendation Engine", 
         date: "June 2019 - Present",
         link: "https://github.com/Maanav-G/Recommendation-Engine",
-        detail: "A data science project that recommends the user a set of movies, based on a user-inputted movie, with a similarity score. Created using Python, and served on a web app using flask."
+        detail: "A model that recommends the user a similar set of movies based on the inputted movie title"
     },
     {
         title: "Chess Engine", 

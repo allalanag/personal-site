@@ -9,7 +9,7 @@ const work = [
     {
         company: "IBM",
         position: "Software Developer and Technical Analyst Intern",    
-        date: "May 2018 - Present"
+        date: "May 2018 - Aug 2019"
     },
     {
         company: "McMaster University",
@@ -24,6 +24,12 @@ const work = [
 ];
 
 const extracurriculars = [
+    {
+        company: "Microsoft",
+        subCompany: "Campus Team",
+        position: "Student Partner",
+        date: "Sept 2019 - Present" 
+    },
     {
         company: "IBM",
         subCompany: "Campus Recruiting Team",
@@ -40,7 +46,7 @@ const extracurriculars = [
         company: "IBM",
         subCompany: "Future Blue",
         position: "Lead of C&D and Social",
-        date: "Jan 2019 - Present"    
+        date: "Jan 2019 - Aug 2019"    
     },
     {
         company: "McMaster Consulting Association",
@@ -64,10 +70,16 @@ const extracurriculars = [
 
 const technical = [
     {
-        name: "Flight Price Tracker",
+        name: "NBA Rookie Statistics Predictor", 
         logo: "icon fab fa-github",
-        link: "https://github.com/Maanav-G/flight-prices",
-        linkName: "/flight-prices" 
+        link: "https://github.com/Maanav-G/NBA-rookie-statistics-analysis",
+        linkName: "/NBA-rookie-statistics-analysis" 
+    },
+    {
+        name: "Reccomendation Engine", 
+        logo: "icon fab fa-github",
+        link: "https://github.com/Maanav-G/Recommendation-Engine",
+        linkName: "/Recommendation-Engine" 
     },
     {
         name: "Chess Engine",
