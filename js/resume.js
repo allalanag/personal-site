@@ -25,6 +25,12 @@ const work = [
 
 const extracurriculars = [
     {
+        company: "Mathematical Research Investment Council",
+        subCompany: "McMaster University",
+        position: "Research Analyst",
+        date: "Sept 2019 - Present" 
+    },
+    {
         company: "Microsoft",
         subCompany: "Campus Team",
         position: "Student Partner",
