@@ -2,14 +2,14 @@
 
 const work = [
     {
-        company: "RBC Capital Markets",
+        company: "Microsoft",
         position: "Incoming Intern",    
-        date: "May 2020"
+        date: "May 2020 - Present"
     },
     {
         company: "Deloitte Consulting",
-        position: "Incoming Intern",    
-        date: "January 2020"
+        position: "Consulting Analyst",    
+        date: "Jan 2020 - Apr 2020 "
     },
     {
         company: "IBM",
@@ -19,7 +19,7 @@ const work = [
     {
         company: "McMaster University",
         position: "Research Assistant - Faculty of Computing & Software",
-        date: "Jan 2019 - Present"    
+        date: "Jan 2019 - May 2019"    
     },
     {
         company: "Mixem",
@@ -30,28 +30,28 @@ const work = [
 
 const extracurriculars = [
     {
+        company: "DeltaHacks",
+        subCompany: "Faculty of Engineering, McMaster University",
+        position: "Vice President Sponsorship",
+        date: "May 2019 - Present" 
+    },
+    {
         company: "Mathematical Research Investment Council",
         subCompany: "McMaster University",
         position: "Research Analyst",
-        date: "Sept 2019 - Present" 
+        date: "Sept 2019 - Dec 2019" 
     },
     {
         company: "Microsoft",
         subCompany: "Campus Team",
         position: "Student Partner",
-        date: "Sept 2019 - Present" 
+        date: "Sept 2019 - Dec 2019" 
     },
     {
         company: "IBM",
         subCompany: "Campus Recruiting Team",
         position: "Student Campus Ambassador",
-        date: "Sept 2019 - Present" 
-    },
-    {
-        company: "DeltaHacks",
-        subCompany: "Faculty of Engineering, McMaster University",
-        position: "Vice President Sponsorship",
-        date: "May 2019 - Present" 
+        date: "Sept 2019 - Dec 2019" 
     },
     {
         company: "IBM",
@@ -137,7 +137,8 @@ const technical = [
 ];
 
 const language = [ 
-    "HTML", 
+    "Java",
+    "HTML",
     "CSS/SASS",
     "JavaScript",
     "Python",
