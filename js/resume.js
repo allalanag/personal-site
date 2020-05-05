@@ -3,7 +3,7 @@
 const work = [
     {
         company: "Microsoft",
-        position: "Incoming Intern",    
+        position: "Software Engineer Intern",    
         date: "May 2020 - Present"
     },
     {
@@ -13,7 +13,7 @@ const work = [
     },
     {
         company: "IBM",
-        position: "Software Developer and Technical Analyst Intern",    
+        position: "Software Engineer Intern",    
         date: "May 2018 - Aug 2019"
     },
     {
@@ -30,10 +30,16 @@ const work = [
 
 const extracurriculars = [
     {
+        company: "Deloitte",
+        subCompany: "Recruiting Team",
+        position: "Campus Ambassador",
+        date: "May 2020 - Present" 
+    },
+    {
         company: "DeltaHacks",
         subCompany: "Faculty of Engineering, McMaster University",
         position: "Vice President Sponsorship",
-        date: "May 2019 - Present" 
+        date: "May 2019 - Jan 2020" 
     },
     {
         company: "Mathematical Research Investment Council",
@@ -81,6 +87,12 @@ const extracurriculars = [
 
 const technical = [
     {
+        name: "Questrade API Wrapper", 
+        logo: "icon fab fa-github",
+        link: "https://github.com/Maanav-G/questrade-api-wrapper",
+        linkName: "/questrade-api-wrapper" 
+    },
+    {
         name: "NBA Rookie Statistics Predictor", 
         logo: "icon fab fa-github",
         link: "https://github.com/Maanav-G/NBA-rookie-statistics-analysis",
@@ -91,6 +103,18 @@ const technical = [
         logo: "icon fab fa-github",
         link: "https://github.com/Maanav-G/Recommendation-Engine",
         linkName: "/Recommendation-Engine" 
+    },
+    {
+        name: "EDGE Leadership (2020)",
+        logo: "icon fas fa-globe",
+        link: "http://www.edgeleadership.ca",
+        linkName: "edgeleadership.ca"  
+    },
+    {
+        name: "DeltaHacks Website (2020)",
+        logo: "icon fas fa-globe",
+        link: "https://www.deltahacks.com",
+        linkName: "deltahacks.com"  
     },
     {
         name: "Chess Engine",
@@ -136,18 +160,36 @@ const technical = [
     },
 ];
 
+
+const medium = [
+    {
+        name: "Send Emails Using Python", 
+        logo: "icon fab fa-medium-m",
+        link: "https://medium.com/python-in-plain-english/send-emails-using-python-28446d04e084",
+        linkName: "/send-emails-using-python" 
+    },
+    {
+        name: "The 8 Best Productivity Apps - MacOS", 
+        logo: "icon fab fa-medium-m",
+        link: "https://medium.com/@maanavgarg/the-10-best-productivity-apps-for-mac-2a70c6f85476",
+        linkName: "/the-8-best-productivity-apps-for-mac" 
+    },
+];
+
+
 const language = [ 
+    "Python",
     "Java",
+    "JavaScript",
     "HTML",
     "CSS/SASS",
-    "JavaScript",
-    "Python",
     "C",
     "Elm",
-    "Haskell"
+
 ];
 
 const technologies = [
+    "Electron",
     "Django",
     "Angular",
     "React",
@@ -159,6 +201,8 @@ const technologies = [
     "Google Cloud",
     "Leap Motion",
     "Arduino",
+    "Rust",
+    "Ember",
     "Rasberry Pi"
 ]
 
@@ -203,6 +247,20 @@ function technicalTemplate(section){
     `;
 };
 
+function mediumTemplate(section){
+    return `
+    <div class="resume-subsection">
+        <div class="resume-subsection-titlesection">
+            <h2 class="resume-subsection-title">${section.name}</h2>
+            <p class="resume-subsection-title">
+                <a href="${section.link}" target="_blank"><i class="${section.logo}"></i></a>
+                ${section.linkName}
+            </p> 
+        </div>
+    </div>
+    `;
+};
+
 function languageTemplate(section){
     return `
     <label class="language">${section}</label>
@@ -221,6 +279,7 @@ window.onload = function(){
     document.getElementById("Technical").innerHTML = `${technical.map(technicalTemplate).join('')}`
     document.getElementById("Language").innerHTML = `${language.map(languageTemplate).join('')}`
     document.getElementById("Technologies").innerHTML = `${technologies.map(technologiesTemplate).join('')}`
+    document.getElementById("Medium").innerHTML = `${medium.map(mediumTemplate).join('')}`
 };
 
 
