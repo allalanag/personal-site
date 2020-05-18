@@ -1,7 +1,3 @@
 node_modules/*
 package-lock.json
 test.html
-js/bootstrap*
-images/*
-files/*
-css/bootstrap*
