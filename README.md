@@ -1,5 +1,5 @@
 # Personal Website
-This is the repo for my personal website that serves as my consolidated portfolio
+This is the repo for my personal website that serves as my consolidated portfolio.
 
 ## Wallet
 ##### [*/wallet/wallet-app](https://maanavgarg.com/wallet/wallet-app.html)
