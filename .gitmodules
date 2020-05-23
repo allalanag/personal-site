@@ -1,0 +1,3 @@
+[submodule "wallet-frontend"]
+	path = wallet-frontend
+	url = https://github.com/Maanav-G/wallet-frontend
