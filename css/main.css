@@ -1,0 +1,103 @@
+
+body {
+}
+
+*{
+    font-family: 'Avenir';
+    font-weight: 100;
+    color: #1b1b1b;
+
+}
+
+h1 {
+    font-family: 'Avenir Next';
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: 100;
+}
+
+a {
+    color: #4F7CAC
+}
+
+p {
+    
+}
+
+.jumbotron {
+    background: white;
+}
+
+
+.card {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+}
+
+.introduction-row {
+    text-align: center;
+}
+
+
+.projects-title {
+
+}
+
+.projects-subtitle {
+}
+
+
+
+.project-card {
+    text-align: center;
+    height: 100%;
+}
+
+.project-img-top {
+
+}
+
+.project-title {
+    margin: 0 0 0.5vh 0
+}
+
+.project-btn-group {
+
+}
+
+.project-btn {
+    margin: 1vh 0.25vh 1vh 0.25vh
+}
+
+.project-text {
+    margin: 1vh 0.0 1vh 0
+}
+
+.work {
+    margin: 0.5vh 0 0.5vh 0;
+    
+}
+
+.work-card {
+}
+
+.work-col {
+
+}
+
+
+.work-image {
+}
+
+.work-btn {
+    margin: 0vh 0.25vh 0.5vh 0.25vh
+}
+
+ul.list-unstyled li {
+    margin: -1vh 0 -1vh 0
+}
+
+.footer-icon{
+    font-size: 2.5vh;
+    margin: 0 1vh 0 1vh
+}

@@ -87,6 +87,18 @@ const extracurriculars = [
 
 const technical = [
     {
+        name: "Wallet", 
+        logo: "icon fab fa-github",
+        link: "https://github.com/Maanav-G/wallet",
+        linkName: "/wallet" 
+    },
+    {
+        name: "Telegram Bot", 
+        logo: "icon fab fa-github",
+        link: "https://github.com/Maanav-G/telegram-bot",
+        linkName: "/telegram-bot" 
+    },
+    {
         name: "Questrade API Wrapper", 
         logo: "icon fab fa-github",
         link: "https://github.com/Maanav-G/questrade-api-wrapper",
