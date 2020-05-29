@@ -229,7 +229,8 @@ function project_template(item) {
                 <div class="card-btn-group project-btn-group">
                     ${tech_list(item.tech)}
                 </div>
-                <p class="card-text project-text">${item.desc}</p>
+                <small><p class="card-text project-text">${item.desc}</p></small>
+                <br/>
                 <a href="${item.link}" class="card-btn btn btn-outline-dark"
                     target="_blank"><i class="icon fab fa-github"></i> ${item.link_name}</a>
             </div>
@@ -280,6 +281,7 @@ function graph_data(list){
 function graph_options(data) {
     var options = {
         series: [{
+        name: "Lvl",
         data: data[1]
       }],
       colors: ['#4F7CAC'],
