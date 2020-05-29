@@ -286,6 +286,9 @@ function graph_options(data) {
       }],
       colors: ['#4F7CAC'],
         chart: {
+        toolbar: {
+            show: false
+        },
         type: 'bar',
         height: 350,
       },
