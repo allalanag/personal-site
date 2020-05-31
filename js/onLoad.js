@@ -60,41 +60,48 @@ const project_list = [
         name: "Wallet",
         image: "./files/images/projects/wallet.png",
         tech: ["Python", "JavaScript", "AWS"],
-        desc: "Wallet is a personal financial management application that provides the user with an aggregated dashboard with all their connected account(s), which allows them to monitor and budget their personal finances. <br/><a href='https://maanavgarg.com/wallet/wallet-app.html' target='_blank'>My Wallet Webapp</a>",
-        link: "https://github.com/Maanav-G/wallet",
-        link_name: "/wallet"
+        desc: "Wallet is a personal financial management application that provides the user with an aggregated dashboard with all their connected account(s), which allows them to monitor and budget their personal finances.",
+        links: [
+            {link: "https://github.com/Maanav-G/wallet", link_name: "/wallet", logo: "icon fab fa-github"},
+            {link: "./wallet/wallet-app.html", link_name: "WebApp", logo: ""},
+        ]
+        
     },
     {
         name: "NBA Rookie Statistics",
         image: "./files/images/projects/nba.png",
         tech: ["Python", "Jupyter Notebook"],
         desc: "A mathematical machine learning model designed to predict the regular season averaging statistics for incoming rookies, by applying the trend of all the NBA player’s (1980 - 2018) college careers compared to their first season in the league, to the 2019 rookies college career statistics. ",
-        link: "https://github.com/Maanav-G/nba-rookie-statistics-analysis",
-        link_name: "/nba-rookie-statistics-analysis"
+        links: [
+            {link: "https://github.com/Maanav-G/nba-rookie-statistics-analysis", link_name: "/nba-rookie-statistics-analysis", logo: "icon fab fa-github"},
+        ]
     },
     {
         name: "Questrade API Wrapper",
         image: "./files/images/projects/questrade.png",
         tech: ["Python"],
         desc: "This is a custom Python wrapper for the <a href='https://www.questrade.com/api/documentation/getting-started' target='_blank'>Questrade API</a> that I built to analyze and retrieve key information from my personal Questrade Trading Account.",
-        link: "https://github.com/Maanav-G/questrade-api-wrapper",
-        link_name: "/questrade-api-wrapper"
+        links: [
+            {link: "https://github.com/Maanav-G/questrade-api-wrapper", link_name: "/questrade-api-wrapper", logo: "icon fab fa-github"},
+        ]
     },
     {
         name: "Recommendation Engine",
         image: "./files/images/projects/movies.png",
-        tech: ["Python"],
+        tech: ["Python", "JavaScript"],
         desc: "A machine learning recommendation engine, that takes a movie as input and returns 10 similar ones, using cosine similarity.",
-        link: "https://github.com/Maanav-G/recommendation-engine",
-        link_name: "/recommendation-engine"
+        links: [
+            {link: "https://github.com/Maanav-G/recommendation-engine", link_name: "/recommendation-engine", logo: "icon fab fa-github"},
+        ]
     },
     {
         name: "Sentiment Telegram Bot",
         image: "./files/images/projects/telegram.png",
         tech: ["Python"],
         desc: "[In-Progress] <br/> A Telegram bot that analyzes a user's message and returns sentiment metrics",
-        link: "https://github.com/Maanav-G/telegram-bot",
-        link_name: "/telegram-bot"
+        links: [
+            {link: "https://github.com/Maanav-G/telegram-bot", link_name: "/telegram-bot", logo: "icon fab fa-github"},
+        ]
     },
 ];
 
@@ -135,8 +142,8 @@ function work_template(item) {
     <div class="col-sm-6" style="padding: 1vh">
     <div class="card work-card" style="width: 100%; height: 100%;">
     <div class ="work">
+            <img class="card-img-top project-img-top" src="${item.image}" alt="${item.name} style="height: 1%">
             <div class="card-body work-body">
-
                 <h5 class="card-title work-title">${item.company}</h5>
                 <p class="card-text work-role">
                     ${item.role} <br />
@@ -231,13 +238,24 @@ function project_template(item) {
                 </div>
                 <small><p class="card-text project-text">${item.desc}</p></small>
                 <br/>
-                <a href="${item.link}" class="card-btn btn btn-outline-dark"
-                    target="_blank"><i class="icon fab fa-github"></i> ${item.link_name}</a>
+                    ${link_list(item.links)}
             </div>
         </div>
     </div>
     `;
 };
+
+function link_list(list) {
+    full_list = ""
+    for(i = 0; i < list.length; i++){
+        item = `
+        <a href="${list[i].link}" class="card-btn btn btn-outline-dark"
+            target="_blank"><i class="${list[i].logo}"></i> ${list[i].link_name}</a>
+        `
+        full_list = full_list + item
+    }
+    return full_list
+}
 
 function tech_list(list) {
     full_list = ""
