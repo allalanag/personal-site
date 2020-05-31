@@ -89,50 +89,62 @@
                     <small>Medium</small>
                 </div>
             </div>
-            <br /> <br />
-            <div>
-                <p class="introduction-desc">
-                    Check out this new app I recently created, called 'Wallet' <br /> It's a personal financial
-                    management application that provides you with an aggregated dashboard with all you connected
-                    account(s)</p>
-                <a href="./wallet/wallet-app.html" class="introduction-btn btn btn-light btn-block" target="_blank">
-                    Wallet <br /><small>Personal Financial Management </small>
-                </a>
-                <br/><br/>
-                <p class="introduction-desc">
-                    Another app I’ve recently created is a Movie Recommender, which takes a movie as an input and
-                    returns 10 similar ones.
-                </p>
-                <a class="introduction-btn btn btn-light btn-block" data-toggle="modal"
-                    data-target="#movie-recommender">
-                    Movie Recommender
-                </a>
-                <div class="modal fade " id="movie-recommender" tabindex="-1" role="dialog"
-                    aria-labelledby="movie-recommender-modal" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Movie Recommender</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="clear_list()">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div style="text-align: center">
-                                    Movie Name: <input id="movie-name" type="text" name="movie-name"> <br />
-                                    <br />
-                                    <button type="button" onclick="submit()"
-                                        class="btn btn-outline-dark">Search</button>
-                                    <br /><br />
-                                    <div id="results"></div>
+            <br/><br/>
+
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <a href="./wallet/wallet-app.html" class="introduction-btn btn btn-light btn-block" target="_blank">
+                        Wallet <br /><small>Personal Financial Management </small>
+                    </a>
+                    <br/>
+                    <p class="introduction-desc">
+                        Check out this new app I recently created, called 'Wallet' <br /> It's a personal financial
+                        management application that provides you with an aggregated dashboard with all you connected
+                        account(s)
+                    </p>
+                </div>
+
+                <div class="col-sm-6">
+                    <a class="introduction-btn btn btn-light btn-block" data-toggle="modal"
+                        data-target="#movie-recommender">
+                        Movie Recommender <br /><small>Recommendation Engine</small>
+                    </a>
+                    <br/>
+                    <p class="introduction-desc">
+                        Another app I’ve recently created is a Movie Recommender, which takes a movie as an input and
+                        returns 10 similar ones.
+                    </p>
+                    <div class="modal fade " id="movie-recommender" tabindex="-1" role="dialog"
+                        aria-labelledby="movie-recommender-modal" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Movie Recommender</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                        onclick="clear_list()">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
                                 </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-outline-dark" data-dismiss="modal" onclick="clear_list()">Close</button>
+                                <div class="modal-body">
+                                    <div style="text-align: center">
+                                        Movie Name: <input id="movie-name" type="text" name="movie-name"> <br />
+                                        <br />
+                                        <button type="button" onclick="submit()"
+                                            class="btn btn-outline-dark">Search</button>
+                                        <br /><br />
+                                        <div id="results"></div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-dark" data-dismiss="modal"
+                                        onclick="clear_list()">Close</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
         <br /><br /><br />
@@ -142,10 +154,10 @@
             <!-- Apex Charts -->
             <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
             <div class="row">
-                <div class="col">
+                <div class="col-sm-6">
                     <div id="skills-lang"></div>
                 </div>
-                <div class="col">
+                <div class="col-sm-6">
                     <div id="skills-tech"></div>
                 </div>
             </div>
