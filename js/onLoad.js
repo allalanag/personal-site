@@ -316,3 +316,75 @@ window.onload = function () {
     var tech_chart = new ApexCharts(document.querySelector("#skills-tech"), graph_options(graph_data(tech)));
     tech_chart.render();
 };
+
+
+// MOVIES RECCOMENDATION 
+function submit() {
+
+    movie_name = document.getElementById("movie-name").value
+
+    const URI = "http://maanavg.pythonanywhere.com/" // CHANGE URI
+    const formData = new FormData();
+
+    formData.append('movie_name', movie_name);
+
+    const requestOptions = {
+        method: 'POST',
+        body: formData,
+    };
+
+    fetch(`${URI}get_recommendations`, requestOptions)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            display(data)
+        })
+        .catch(function (error) {
+            console.error(error)
+        });
+}
+
+function display(data) {
+    display_data(clean_data(data), "results")
+}
+
+function clean_data(data) {
+    template = `
+    <p>Searching for '${data[0][0].title}'</p>
+    <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">Movie Title</th>
+                <th scope="col">Similarity</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+    `
+    for (i = 1; i < data.length; i++) {
+        item = `
+                <tr>
+                <td>${data[i][0].title}</td>
+                <td>${data[i][0].similarity}%</td>
+                </tr>
+        `
+        template = template + item
+    }
+    template = template + `
+        </tbody>
+    </table>
+    `
+    return template
+
+}
+
+function clear_list(){
+    document.getElementById('results').innerHTML = ""
+}
+
+function display_data(data, id) {
+    document.getElementById(id).innerHTML = data
+}
+
+// MOVIES RECCOMENDATION 

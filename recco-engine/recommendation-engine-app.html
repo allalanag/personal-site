@@ -6,65 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
     <script src="main.js"></script>
 </head>
 
 <body>
-    <br>
-    Movie Name: <input id="movie-name" type="text" name="movie-name"> <br />
-    <input type="button" onclick="submit()" value="Submit">
+    <div class="container">
 
-    <div id="results"></div>
+    </div>
+
 
 </body>
 
 </html>
 
 <script>
-    function submit() {
-    
-        movie_name = document.getElementById("movie-name").value
 
-        const URI = "http://127.0.0.1:5000/" // CHANGE URI
-        const formData = new FormData();
-
-        formData.append('movie_name', movie_name);
-
-        const requestOptions = {
-            method: 'POST',
-            body: formData,
-        };
-
-        fetch(`${URI}get_recommendations`, requestOptions)
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (data) {
-                display(data)
-            })
-            .catch(function (error) {
-                console.error(error)
-            });
-    }
-
-    function display(data){
-        display_data(clean_data(data), "results")
-    }
-    
-    function clean_data(data){
-        template = ""
-        for(i = 0; i < data.length; i++){
-            item = `
-                <p>${data[i]}</p>
-            `
-            template = template + item
-        }
-        return template
-    
-    }
-
-    function display_data(data, id) {
-        document.getElementById(id).innerHTML = data
-    }
 </script>
