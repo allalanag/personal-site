@@ -331,6 +331,7 @@ function submit() {
     const requestOptions = {
         method: 'POST',
         body: formData,
+        mode: 'cors'
     };
 
     fetch(`${URI}get_recommendations`, requestOptions)
