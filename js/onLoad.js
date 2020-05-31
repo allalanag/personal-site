@@ -323,7 +323,7 @@ function submit() {
 
     movie_name = document.getElementById("movie-name").value
 
-    const URI = "http://maanavg.pythonanywhere.com/" // CHANGE URI
+    const URI = "https://maanavg.pythonanywhere.com/" // CHANGE URI
     const formData = new FormData();
 
     formData.append('movie_name', movie_name);
