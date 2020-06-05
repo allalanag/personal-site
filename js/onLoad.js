@@ -112,7 +112,7 @@ const lang = [
     ["JavaScript", 7],
     ["HTML", 7],
     ["CSS/SASS", 6],
-    ["MIPS Assembly", 4],
+    ["MIPS", 4],
 ];
 
 const tech = [
@@ -142,7 +142,6 @@ function work_template(item) {
     <div class="col-sm-6" style="padding: 1vh">
     <div class="card work-card" style="width: 100%; height: 100%;">
     <div class ="work">
-            <img class="card-img-top project-img-top" src="${item.image}" alt="${item.name} style="height: 1%">
             <div class="card-body work-body">
                 <h5 class="card-title work-title">${item.company}</h5>
                 <p class="card-text work-role">

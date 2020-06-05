@@ -1,19 +1,27 @@
+body {}
 
-body {
-
-}
-
-*{
+* {
     font-family: 'Avenir';
     font-weight: 100;
     color: #1b1b1b;
 }
 
+#particles-js {
+    background: rgb(27,27,27);
+    background: linear-gradient(180deg, rgba(27,27,27,1) 0%, rgba(255,255,255,1) 100%);
+    /* background-image: radial-gradient(#1b1b1b, black, #1b1b1b, #1b1b1b); */
+}
+
+
 h1 {
     font-family: 'Avenir Next';
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 100;
 }
 
@@ -21,17 +29,20 @@ a {
     color: #4F7CAC
 }
 
-p {
-    
-}
+p {}
 
 .jumbotron {
-    background: white;
+    /* background: black; */
+    /* z-index : 99999;
+    position: absolute; */
+    background: none;
+    /* left: 50%; */
 }
 
 
 .card {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+    border-radius: 1.5vh
 }
 
 .card-btn {
@@ -43,12 +54,9 @@ p {
 }
 
 
-.projects-title {
+.projects-title {}
 
-}
-
-.projects-subtitle {
-}
+.projects-subtitle {}
 
 
 
@@ -57,17 +65,13 @@ p {
     height: 100%;
 }
 
-.project-img-top {
-
-}
+.project-img-top {}
 
 .project-title {
     margin: 0 0 0.5vh 0
 }
 
-.project-btn-group {
-
-}
+.project-btn-group {}
 
 .project-btn {
     margin: 1vh 0.25vh 1vh 0.25vh
@@ -79,19 +83,15 @@ p {
 
 .work {
     margin: 0.5vh 0 0.5vh 0;
-    
-}
-
-.work-card {
-}
-
-.work-col {
 
 }
 
+.work-card {}
 
-.work-image {
-}
+.work-col {}
+
+
+.work-image {}
 
 .work-btn {
     margin: 0vh 0.25vh 0.5vh 0.25vh
@@ -101,7 +101,105 @@ ul.list-unstyled li {
     margin: -1vh 0 -1vh 0
 }
 
-.footer-icon{
+.footer-icon {
     font-size: 2.5vh;
     margin: 0 1vh 0 1vh
+}
+
+
+/* Loader */
+
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.loader {
+    animation: rotate 1s infinite;
+    height: 50px;
+    width: 50px;
+}
+
+.loader:before,
+.loader:after {
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 20px;
+    width: 20px;
+}
+
+.loader:before {
+    animation: ball1 1s infinite;
+    background-color: white;
+    box-shadow: 30px 0 0 white;
+    margin-bottom: 10px;
+}
+
+.loader:after {
+    animation: ball2 1s infinite;
+    background-color: white;
+    box-shadow: 30px 0 0 white;
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg) scale(0.8);
+        -moz-transform: rotate(0deg) scale(0.8);
+    }
+
+    50% {
+        -webkit-transform: rotate(360deg) scale(1.2);
+        -moz-transform: rotate(360deg) scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: rotate(720deg) scale(0.8);
+        -moz-transform: rotate(720deg) scale(0.8);
+    }
+}
+
+@keyframes ball1 {
+    0% {
+        box-shadow: 30px 0 0 white;
+    }
+
+    50% {
+        box-shadow: 0 0 0 white;
+        margin-bottom: 0;
+        -webkit-transform: translate(15px, 15px);
+        -moz-transform: translate(15px, 15px);
+    }
+
+    100% {
+        box-shadow: 30px 0 0 white;
+        margin-bottom: 10px;
+    }
+}
+
+@keyframes ball2 {
+    0% {
+        box-shadow: 30px 0 0 white;
+    }
+
+    50% {
+        box-shadow: 0 0 0 white;
+        margin-top: -20px;
+        -webkit-transform: translate(15px, 15px);
+        -moz-transform: translate(15px, 15px);
+    }
+
+    100% {
+        box-shadow: 30px 0 0 white;
+        margin-top: 0;
+    }
 }
