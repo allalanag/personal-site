@@ -1,6 +1,7 @@
 const work_list = [
     {
         company: "Microsoft",
+        subteam: "Rich Navigation",
         image: "./files/images/work/microsoft.png",
         role: "Software Engineer Intern",
         date: "May 2020 - Present",
@@ -14,6 +15,7 @@ const work_list = [
     },
     {
         company: "Deloitte Consulting",
+        subteam: "Systems Engineering",
         image: "./files/images/work/deloitte.png",
         role: "Consulting Analyst - Intern",
         date: "January 2020 - April 2020",
@@ -29,9 +31,10 @@ const work_list = [
     },
     {
         company: "IBM",
+        subteam: "Securities Industry Services",
         image: "./files/images/work/ibm.png",
         role: "Software Engineer Intern",
-        date: "May 2018 - August 2019 (16 months)",
+        date: "May 2018 - August 2019 (16-months)",
         location: "Toronto, ON",
         tech: ["Java", "JavaScript", "Python"],
         desc: [
@@ -42,7 +45,8 @@ const work_list = [
         ],
     },
     {
-        company: "McMaster University - <small>Faculty of Computing & Software</small>",
+        company: "McMaster University",
+        subteam: "Faculty of Computing & Software",
         image: "./files/images/work/mac.png",
         role: "Research Assistant",
         date: "January 2019 - May 2019",
@@ -143,7 +147,10 @@ function work_template(item) {
     <div class="card work-card" style="width: 100%; height: 100%;">
     <div class ="work">
             <div class="card-body work-body">
-                <h5 class="card-title work-title">${item.company}</h5>
+                <h5 class="card-title work-title">
+                    ${item.company} |
+                    <small>${item.subteam}</small>
+                </h5>
                 <p class="card-text work-role">
                     ${item.role} <br />
                     <small>${item.date}</small> <br />
