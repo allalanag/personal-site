@@ -57,6 +57,18 @@ const work_list = [
             "Developed 14 quantitative models of gradient waveforms based on Dr. Anand’s recent research on ‘MRI’ by analyzing gathered data."
         ],
     },
+    {
+        company: "Mixem App",
+        subteam: "User Interface",
+        image: "",
+        role: "Frontend Engineer Intern",
+        date: "January 2018 - April 2018",
+        location: "Toronto, ON",
+        tech: ["JavaScript", "ReactJS", "HTML/CSS"],
+        desc: [
+            "Implemented the Front-End Structure for the application's UI.",
+        ],
+    },
 ];
 
 const project_list = [
