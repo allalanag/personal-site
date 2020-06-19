@@ -14,10 +14,10 @@ Frontend Repo: [Maanav-G/wallet-frontend](https://github.com/Maanav-G/wallet-fro
 
 Backend Repo: Private repo - Hosted on AWS @ [wallet.maanavgarg.com](http://wallet.maanavgarg.com)
 
-## Resume
+## Resume - Online Version 
 ##### [*/resume](https://maanavgarg.com/resume.html)
 
-This is the **online** version of my resume, that outlines **all** of my experience thus far and is served as an extension of my website. 
+This is the **online** version of my resume, that outlines **all** of my experience thus far and is served as an extension of my website. This will always be the most updated version of my resume!
 
 Where all the styling and functionality were developed from scratch. 
 
