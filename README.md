@@ -1,6 +1,8 @@
 # Personal Website
 This is the repo for my personal website that serves as my consolidated portfolio.
 
+I've also served the following on my website:
+
 ## Wallet
 ##### [*/wallet/wallet-app](https://maanavgarg.com/wallet/wallet-app.html)
 
@@ -15,7 +17,7 @@ Backend Repo: Private repo - Hosted on AWS @ [wallet.maanavgarg.com](http://wall
 ## Resume
 ##### [*/resume](https://maanavgarg.com/resume.html)
 
-This is the only version of my resume, that outlines **all** of my experience thus far and is served as an extension of my website. 
+This is the **online** version of my resume, that outlines **all** of my experience thus far and is served as an extension of my website. 
 
 Where all the styling and functionality were developed from scratch. 
 
