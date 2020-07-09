@@ -21,3 +21,6 @@ This is the **online** version of my resume, that outlines **all** of my experie
 
 Where all the styling and functionality were developed from scratch. 
 
+----
+
+Hosted using Netlify
