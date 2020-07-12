@@ -73,6 +73,15 @@ const work_list = [
 
 const project_list = [
     {
+        name: "McMaster Internship Dashboard ",
+        image: "./files/images/projects/dashboard.png",
+        tech: ["Python", "JavaScript", "MongoDB", "Azure"],
+        desc: "[Upcoming Project] <br/> An interactive dashboard that displays information on McMaster’s Engineering students and their internship career thus far, for which the data was extracted from <a href='https://www.linkedin.com/' target='_blank'>LinkedIn.com</a><br/>All data was scraped from public profiles only.",
+        links: [
+        ]
+        
+    },
+    {
         name: "Wallet",
         image: "./files/images/projects/wallet.png",
         tech: ["Python", "JavaScript", "AWS"],
@@ -180,9 +189,6 @@ function work_template(item) {
 </div>
 </div>
     `
-
-
-
 
 
     // `
