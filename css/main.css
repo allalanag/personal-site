@@ -1,9 +1,8 @@
-body {}
-
 * {
-    font-family: 'Avenir';
+    font-family: "Avenir";
     font-weight: 100;
     color: #1b1b1b;
+    -webkit-font-smoothing: antialiased;
 }
 
 #particles-js {
@@ -71,15 +70,22 @@ p {}
     margin: 0 0 0.5vh 0
 }
 
-.project-btn-group {}
+.project-btn-group {
+    margin: 1vh 0 1vh 0
+}
 
 .project-btn {
-    margin: 1vh 0.25vh 1vh 0.25vh
+    margin: 0.25vh 0.25vh 0.25vh 0.25vh
 }
 
 .project-text {
     margin: 1vh 0.0 1vh 0
 }
+
+button.tech {
+    
+}
+
 
 .work {
     margin: 0.5vh 0 0.5vh 0;
@@ -93,9 +99,15 @@ p {}
 
 .work-image {}
 
-.work-btn {
-    margin: 0vh 0.25vh 0.5vh 0.25vh
+.work-btn-group{
+    margin: 1vh 0 2vh 0
 }
+
+.work-btn {
+    margin: 0.25vh 0.25vh 0.25vh 0.25vh
+}
+
+
 
 ul.list-unstyled li {
     margin: -1vh 0 -1vh 0

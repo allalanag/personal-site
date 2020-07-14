@@ -6,11 +6,12 @@ const work_list = [
         role: "Software Engineer Intern",
         date: "May 2020 - Present",
         location: "Seattle, WA",
-        tech: ["C#", "ASP.NET", "JavaScript"],
+        tech: ["C#", "ASP.NET", "JavaScript", "TypeScript", "ReactJS", "SQL", "KQL (Kusto)", "Azure"],
         desc: [
-            "Designing and implementing an interactive dashboard with C#, ASP.NET and JavaScript for Visual Studio’s extension ecosystem.",
-            "Leveraging Kusto (KQL) for engineering data, by dynamically translating extension telemetry into digestible information for the dashboard.",
-            "Proactively refining and validating the project’s requirements by conducting interviews with the targeted customer base, to maximize utility."
+            "Developed an interactive telemetry based dashboard using C# with ASP.NET and JavaScript for Visual Studio’s extension ecosystem.",
+            "Leveraged Kusto and SQL for extracting and engineering data, by translating extension telemetry into digestible information for the dashboard by processing the data into an Azure SQL Database and using an Azure WebJob that runs periodically (1 hour) to append any new data.",
+            "Designed and implemented over 15 different components for the dashboard’s UI using ReactJS and TypeScript.",
+            "Implemented security protocols to protect the dashboard’s server and users from malicious activities using Azure KeyVault and Application Gateway."
         ],
     },
     {
@@ -20,7 +21,7 @@ const work_list = [
         role: "Consulting Analyst - Intern",
         date: "January 2020 - April 2020",
         location: "Toronto, ON",
-        tech: ["Project Management", "Functional Delivery", "JIRA/Confluence"],
+        tech: ["Project Management", "Functional Delivery", "Confluence" , "JIRA", "Excel/VBA"],
         desc: [
             "Consulted client-side for a large aviation conglomerate on delivering a ‘Loyalty’ program from end-to-end. ",
             "Acted as the primary functional analyst for our feature team, where I was the liaison between the client and vendors for all technical and business processes.",
@@ -36,12 +37,12 @@ const work_list = [
         role: "Software Engineer Intern",
         date: "May 2018 - August 2019 (16-months)",
         location: "Toronto, ON",
-        tech: ["Java", "JavaScript", "Python"],
+        tech: ["Java", "JavaScript", "Python", "IBM Cloudant", "IBM Db2"],
         desc: [
             "Supported client-side development for TD, National Bank, HSBC, and Desjardins by working on 8 distinct projects, primarily using Java and Python.",
-            "Designed and developed a fully functioning REST API that returned the required order data based on the transaction ID by connecting to the Thompson Reuter server and cross-referencing with internal data and requirements.",
+            "Designed and developed a fully functioning REST API using Python that stored the required order data based on the transaction ID in an IBM Cloudant Database by connecting to the Thompson Reuter server and cross-referencing with internal data and requirements.",
             "Increased TD’s orders-processed per second by ~100% (600,000), by implementing Java to redesign their stock order engine, while also overseeing the QA effort and handling required post-delivery maintenance.",
-            "Streamlined an internal unit-testing process by 20% (4hrs) by creating a Python script that automates test case construction, using the internal database."
+            "Streamlined an internal unit-testing process by 20% (4hr) by creating a Python script that automates test-case construction, using an internal SQL Database."
         ],
     },
     {
@@ -58,15 +59,15 @@ const work_list = [
         ],
     },
     {
-        company: "Mixem App",
+        company: "Mixem",
         subteam: "User Interface",
         image: "",
-        role: "Frontend Engineer Intern",
+        role: "Software Engineer Intern",
         date: "January 2018 - April 2018",
         location: "Toronto, ON",
-        tech: ["JavaScript", "ReactJS", "HTML/CSS"],
+        tech: ["Swift", "JavaScript", "ReactJS", "HTML/CSS"],
         desc: [
-            "Implemented the Front-End Structure for the application's UI.",
+            "Designed and implemented the front-end portion of Mixem’s mobile application primarily using JavaScript and Swift with React Native.",
         ],
     },
 ];
@@ -285,7 +286,7 @@ function tech_list(list) {
     full_list = ""
     for (i = 0; i < list.length; i++) {
         item = `
-            <button class="card-btn btn btn-outline-dark btn-sm project-btn">${list[i]}</button>
+            <button class="tech card-btn btn btn-outline-dark btn-sm project-btn">${list[i]}</button>
         `
         full_list = full_list + item
     }
